@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 const ecosystems = {
   hubs: [
@@ -33,79 +35,128 @@ const ecosystems = {
 
 const EcosystemSection: React.FC = () => {
   return (
-    <section id="ecossistema" className="section-padding bg-swmg-light">
+    <section id="ecossistema" className="section-padding bg-gradient-to-b from-white to-[#f0f0f0]">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <Badge className="bg-swmg-light text-swmg-primary hover:bg-swmg-light mb-4">Conexões</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-swmg-dark mb-4">Ecossistema de Inovação em Minas Gerais</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore o vibrante ecossistema de startups e inovação de Minas Gerais, um dos mais importantes do Brasil.
+          <Badge className="bg-[#00923f] text-white hover:bg-[#00823a] mb-4">Ecossistema</Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002776] mb-4">Ecossistema de Inovação em Minas Gerais</h2>
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            Explore o vibrante ecossistema de startups e inovação de Minas Gerais, um dos mais importantes do Brasil, 
+            reunindo hubs, investidores, universidades e eventos que impulsionam o empreendedorismo no estado.
           </p>
+          <div className="max-w-xl mx-auto mt-8 mb-12">
+            <div className="h-2 bg-gradient-to-r from-[#002776] via-[#f0f0f0] to-[#cc0000] rounded-full"></div>
+          </div>
         </div>
 
         <div className="space-y-20">
           <div>
-            <h3 className="text-2xl font-bold text-swmg-primary mb-8 text-center">Hubs e Aceleradoras</h3>
+            <div className="flex items-center justify-between mb-8">
+              <h3 className="text-2xl font-bold text-[#002776]">Hubs e Aceleradoras</h3>
+              <div className="hidden md:block w-1/3 h-px bg-gradient-to-r from-transparent via-[#CC0000] to-transparent"></div>
+              <span className="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-[#002776] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                  <path d="M12 2v20"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </span>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {ecosystems.hubs.map(item => (
-                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in">
+                <Card key={item.id} className="overflow-hidden hover:shadow-lg transition-all duration-300 animate-fade-in border-t-4 border-t-[#002776] hover:scale-[1.02]">
                   <CardHeader>
-                    <CardTitle className="text-lg">{item.name}</CardTitle>
+                    <CardTitle className="text-lg text-[#002776]">{item.name}</CardTitle>
                     <CardDescription>{item.city}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Badge>{item.type}</Badge>
+                    <Badge variant="outline" className="bg-[#f0f0f0] text-[#002776] border-[#002776]">{item.type}</Badge>
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
 
+          <Separator className="bg-gray-200" />
+
           <div>
-            <h3 className="text-2xl font-bold text-swmg-primary mb-8 text-center">Investidores</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex items-center justify-between mb-8">
+              <h3 className="text-2xl font-bold text-[#002776]">Investidores</h3>
+              <div className="hidden md:block w-1/3 h-px bg-gradient-to-r from-transparent via-[#CC0000] to-transparent"></div>
+              <span className="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-[#002776] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 2v20"/>
+                  <path d="M2 12h20"/>
+                </svg>
+              </span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {ecosystems.investors.map(item => (
-                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in">
+                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in border-l-4 border-l-[#CC0000] hover:scale-[1.02]">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.name}</CardTitle>
                     <CardDescription>{item.city}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Badge variant="outline" className="bg-swmg-light/50">{item.type}</Badge>
+                    <Badge variant="outline" className="bg-white/50 border-[#CC0000] text-[#CC0000]">{item.type}</Badge>
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
 
+          <Separator className="bg-gray-200" />
+
           <div>
-            <h3 className="text-2xl font-bold text-swmg-primary mb-8 text-center">Universidades</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex items-center justify-between mb-8">
+              <h3 className="text-2xl font-bold text-[#002776]">Universidades</h3>
+              <div className="hidden md:block w-1/3 h-px bg-gradient-to-r from-transparent via-[#CC0000] to-transparent"></div>
+              <span className="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-[#002776] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {ecosystems.universities.map(item => (
-                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in">
+                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in hover:scale-[1.02] bg-gradient-to-br from-white to-[#f8f8f8]">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.name}</CardTitle>
                     <CardDescription>{item.city}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Badge variant="secondary">{item.type}</Badge>
+                    <Badge variant="secondary" className="bg-[#00923f]/10 text-[#00923f]">{item.type}</Badge>
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
 
+          <Separator className="bg-gray-200" />
+
           <div>
-            <h3 className="text-2xl font-bold text-swmg-primary mb-8 text-center">Eventos</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex items-center justify-between mb-8">
+              <h3 className="text-2xl font-bold text-[#002776]">Eventos</h3>
+              <div className="hidden md:block w-1/3 h-px bg-gradient-to-r from-transparent via-[#CC0000] to-transparent"></div>
+              <span className="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-[#002776] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                  <line x1="16" x2="16" y1="2" y2="6"/>
+                  <line x1="8" x2="8" y1="2" y2="6"/>
+                  <line x1="3" x2="21" y1="10" y2="10"/>
+                </svg>
+              </span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {ecosystems.events.map(item => (
-                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in">
+                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in border-b-4 border-b-[#00923f] hover:scale-[1.02]">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.name}</CardTitle>
                     <CardDescription>{item.city}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Badge variant="outline" className="border-swmg-primary text-swmg-primary">{item.type}</Badge>
+                    <Badge variant="outline" className="border-[#00923f] text-[#00923f]">{item.type}</Badge>
                   </CardContent>
                 </Card>
               ))}
@@ -114,23 +165,31 @@ const EcosystemSection: React.FC = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-block p-6 bg-white rounded-xl shadow-md">
+          <div className="inline-block p-8 rounded-2xl shadow-lg bg-gradient-to-br from-white to-[#f8f8f8] border border-gray-100">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <p className="text-3xl font-bold text-swmg-primary mb-2">10+</p>
-                <p className="text-sm text-gray-600">Cidades</p>
+                <div className="w-16 h-16 rounded-full bg-[#002776] flex items-center justify-center mx-auto mb-3">
+                  <p className="text-xl font-bold text-white">10+</p>
+                </div>
+                <p className="font-medium text-[#002776]">Cidades</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-swmg-primary mb-2">30+</p>
-                <p className="text-sm text-gray-600">Eventos</p>
+                <div className="w-16 h-16 rounded-full bg-[#CC0000] flex items-center justify-center mx-auto mb-3">
+                  <p className="text-xl font-bold text-white">30+</p>
+                </div>
+                <p className="font-medium text-[#002776]">Eventos</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-swmg-primary mb-2">500+</p>
-                <p className="text-sm text-gray-600">Participantes</p>
+                <div className="w-16 h-16 rounded-full bg-[#00923f] flex items-center justify-center mx-auto mb-3">
+                  <p className="text-xl font-bold text-white">500+</p>
+                </div>
+                <p className="font-medium text-[#002776]">Participantes</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-swmg-primary mb-2">8+</p>
-                <p className="text-sm text-gray-600">Anos de história</p>
+                <div className="w-16 h-16 rounded-full bg-[#f0f0f0] flex items-center justify-center mx-auto mb-3 border-2 border-[#002776]">
+                  <p className="text-xl font-bold text-[#002776]">8+</p>
+                </div>
+                <p className="font-medium text-[#002776]">Anos de história</p>
               </div>
             </div>
           </div>
