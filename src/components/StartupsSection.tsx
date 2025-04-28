@@ -52,9 +52,9 @@ const startups = [
 
 const StartupsSection: React.FC = () => {
   return (
-    <section id="startups" className="section-padding">
+    <section id="startups" className="section-padding bg-gradient-to-b from-white to-gray-50">
       <div className="container-custom">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <Badge className="bg-swmg-light text-swmg-primary hover:bg-swmg-light mb-4">Casos de Sucesso</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-swmg-dark mb-4">Startups nascidas no Startup Weekend</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -62,62 +62,70 @@ const StartupsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {startups.map(startup => (
-            <Card key={startup.id} className="overflow-hidden transition-all duration-300 hover:shadow-lg animate-slide-up">
-              <div className={`h-2 bg-gradient-to-r ${startup.color}`}></div>
-              <CardHeader>
-                <div className="flex justify-between items-center">
-                  <CardTitle className="text-xl">{startup.name}</CardTitle>
-                  <Badge variant="outline">{startup.category}</Badge>
-                </div>
-                <CardDescription className="flex items-center space-x-2">
-                  <span>{startup.city}</span>
-                  <span>•</span>
-                  <span>{startup.year}</span>
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4">{startup.description}</p>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div className="bg-gray-50 p-3 rounded-md">
-                    <p className="text-gray-500 text-xs">Investimento</p>
-                    <p className="font-semibold">{startup.funding}</p>
+            <Card key={startup.id} className="group overflow-hidden transition-all duration-300 hover:shadow-xl animate-slide-up border-0 shadow-lg hover:-translate-y-1">
+              <div className={`h-3 bg-gradient-to-r ${startup.color}`}></div>
+              <CardHeader className="relative pb-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <CardTitle className="text-2xl font-bold mb-2">{startup.name}</CardTitle>
+                    <CardDescription className="flex items-center space-x-2 text-base">
+                      <span>{startup.city}</span>
+                      <span>•</span>
+                      <span>{startup.year}</span>
+                    </CardDescription>
                   </div>
-                  <div className="bg-gray-50 p-3 rounded-md">
-                    <p className="text-gray-500 text-xs">Status</p>
-                    <p className="font-semibold">{startup.status}</p>
+                  <Badge variant="outline" className="text-sm transform group-hover:scale-105 transition-transform">
+                    {startup.category}
+                  </Badge>
+                </div>
+              </CardHeader>
+              
+              <CardContent>
+                <p className="mb-6 text-gray-600 leading-relaxed">{startup.description}</p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 transform transition-all duration-300 hover:shadow-md">
+                    <p className="text-gray-500 text-xs mb-1">Investimento</p>
+                    <p className="font-bold text-swmg-primary">{startup.funding}</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 transform transition-all duration-300 hover:shadow-md">
+                    <p className="text-gray-500 text-xs mb-1">Status</p>
+                    <p className="font-bold text-swmg-dark">{startup.status}</p>
                   </div>
                 </div>
               </CardContent>
-              <CardFooter className="text-sm text-gray-500">
-                <div className="flex items-center">
+
+              <CardFooter className="bg-gray-50/50 border-t border-gray-100">
+                <div className="flex items-center text-sm text-gray-600">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
                     <polyline points="15 10 20 15 15 20"/>
                     <path d="M4 4v7a4 4 0 0 0 4 4h12"/>
                   </svg>
-                  <span>Nasceu no SW {startup.city} {startup.year}</span>
+                  <span className="group-hover:text-swmg-primary transition-colors">
+                    Nasceu no SW {startup.city} {startup.year}
+                  </span>
                 </div>
               </CardFooter>
             </Card>
           ))}
         </div>
 
-        <div className="mt-16 bg-swmg-light p-8 rounded-xl">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="mb-6 md:mb-0">
-              <h3 className="text-xl md:text-2xl font-bold text-swmg-dark mb-2">Sua startup pode ser a próxima!</h3>
-              <p className="text-gray-600">
+        <div className="mt-20 bg-gradient-to-br from-swmg-light via-white to-swmg-light p-8 rounded-2xl shadow-lg">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="text-left">
+              <h3 className="text-2xl md:text-3xl font-bold text-swmg-dark mb-3">Sua startup pode ser a próxima!</h3>
+              <p className="text-gray-600 text-lg">
                 Já são mais de 30 startups surgidas do Circuito Mineiro de Startup Weekend.
               </p>
             </div>
-            <div className="flex space-x-4">
+            <div className="flex gap-6">
               {["2021", "2022", "2023", "2024"].map(year => (
-                <div key={year} className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center mb-1">
-                    <span className="text-swmg-primary font-bold">{year}</span>
+                <div key={year} className="text-center transform transition-all duration-300 hover:scale-105">
+                  <div className="w-20 h-20 rounded-2xl bg-white shadow-lg flex items-center justify-center mb-2 border border-gray-100">
+                    <span className="text-swmg-primary font-bold text-xl">{year}</span>
                   </div>
-                  <span className="text-xs">{parseInt(year) - 2017} startups</span>
+                  <span className="text-sm font-medium text-gray-600">{parseInt(year) - 2017} startups</span>
                 </div>
               ))}
             </div>
