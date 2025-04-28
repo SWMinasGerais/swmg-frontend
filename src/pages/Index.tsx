@@ -5,6 +5,9 @@ import HeroSection from '@/components/HeroSection';
 import EventsSection from '@/components/EventsSection';
 import StartupsSection from '@/components/StartupsSection';
 import EcosystemSection from '@/components/EcosystemSection';
+import MentorsSection from '@/components/MentorsSection';
+import PartnersSection from '@/components/PartnersSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
 import Footer from '@/components/Footer';
 
 const Index: React.FC = () => {
@@ -16,6 +19,9 @@ const Index: React.FC = () => {
         <EventsSection />
         <StartupsSection />
         <EcosystemSection />
+        <MentorsSection />
+        <TestimonialsSection />
+        <PartnersSection />
       </main>
       <Footer />
     </div>
