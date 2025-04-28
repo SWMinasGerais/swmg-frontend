@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const ecosystems = {
   hubs: [
@@ -35,9 +33,9 @@ const ecosystems = {
 
 const EcosystemSection: React.FC = () => {
   return (
-    <section id="ecossistema" className="section-padding bg-gray-50">
+    <section id="ecossistema" className="section-padding bg-swmg-light">
       <div className="container-custom">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <Badge className="bg-swmg-light text-swmg-primary hover:bg-swmg-light mb-4">Conexões</Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-swmg-dark mb-4">Ecossistema de Inovação em Minas Gerais</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -45,28 +43,12 @@ const EcosystemSection: React.FC = () => {
           </p>
         </div>
 
-        <Tabs defaultValue="hubs" className="w-full">
-          <div className="flex justify-center mb-8">
-            <TabsList className="bg-swmg-light">
-              <TabsTrigger value="hubs" className="data-[state=active]:bg-swmg-primary data-[state=active]:text-white">
-                Hubs e Aceleradoras
-              </TabsTrigger>
-              <TabsTrigger value="investors" className="data-[state=active]:bg-swmg-primary data-[state=active]:text-white">
-                Investidores
-              </TabsTrigger>
-              <TabsTrigger value="universities" className="data-[state=active]:bg-swmg-primary data-[state=active]:text-white">
-                Universidades
-              </TabsTrigger>
-              <TabsTrigger value="events" className="data-[state=active]:bg-swmg-primary data-[state=active]:text-white">
-                Eventos
-              </TabsTrigger>
-            </TabsList>
-          </div>
-
-          <TabsContent value="hubs" className="animate-fade-in">
+        <div className="space-y-20">
+          <div>
+            <h3 className="text-2xl font-bold text-swmg-primary mb-8 text-center">Hubs e Aceleradoras</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {ecosystems.hubs.map(item => (
-                <Card key={item.id} className="hover:shadow-md transition-shadow duration-300">
+                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.name}</CardTitle>
                     <CardDescription>{item.city}</CardDescription>
@@ -77,12 +59,13 @@ const EcosystemSection: React.FC = () => {
                 </Card>
               ))}
             </div>
-          </TabsContent>
+          </div>
 
-          <TabsContent value="investors" className="animate-fade-in">
+          <div>
+            <h3 className="text-2xl font-bold text-swmg-primary mb-8 text-center">Investidores</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {ecosystems.investors.map(item => (
-                <Card key={item.id} className="hover:shadow-md transition-shadow duration-300">
+                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.name}</CardTitle>
                     <CardDescription>{item.city}</CardDescription>
@@ -93,12 +76,13 @@ const EcosystemSection: React.FC = () => {
                 </Card>
               ))}
             </div>
-          </TabsContent>
+          </div>
 
-          <TabsContent value="universities" className="animate-fade-in">
+          <div>
+            <h3 className="text-2xl font-bold text-swmg-primary mb-8 text-center">Universidades</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {ecosystems.universities.map(item => (
-                <Card key={item.id} className="hover:shadow-md transition-shadow duration-300">
+                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.name}</CardTitle>
                     <CardDescription>{item.city}</CardDescription>
@@ -109,12 +93,13 @@ const EcosystemSection: React.FC = () => {
                 </Card>
               ))}
             </div>
-          </TabsContent>
+          </div>
 
-          <TabsContent value="events" className="animate-fade-in">
+          <div>
+            <h3 className="text-2xl font-bold text-swmg-primary mb-8 text-center">Eventos</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {ecosystems.events.map(item => (
-                <Card key={item.id} className="hover:shadow-md transition-shadow duration-300">
+                <Card key={item.id} className="hover:shadow-lg transition-all duration-300 animate-fade-in">
                   <CardHeader>
                     <CardTitle className="text-lg">{item.name}</CardTitle>
                     <CardDescription>{item.city}</CardDescription>
@@ -125,26 +110,26 @@ const EcosystemSection: React.FC = () => {
                 </Card>
               ))}
             </div>
-          </TabsContent>
-        </Tabs>
+          </div>
+        </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-block p-4 bg-white rounded-xl shadow-md">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+          <div className="inline-block p-6 bg-white rounded-xl shadow-md">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <p className="text-3xl font-bold text-swmg-primary mb-1">10+</p>
+                <p className="text-3xl font-bold text-swmg-primary mb-2">10+</p>
                 <p className="text-sm text-gray-600">Cidades</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-swmg-primary mb-1">30+</p>
+                <p className="text-3xl font-bold text-swmg-primary mb-2">30+</p>
                 <p className="text-sm text-gray-600">Eventos</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-swmg-primary mb-1">500+</p>
+                <p className="text-3xl font-bold text-swmg-primary mb-2">500+</p>
                 <p className="text-sm text-gray-600">Participantes</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-swmg-primary mb-1">8+</p>
+                <p className="text-3xl font-bold text-swmg-primary mb-2">8+</p>
                 <p className="text-sm text-gray-600">Anos de história</p>
               </div>
             </div>
