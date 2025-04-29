@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -52,19 +51,23 @@ const startups = [
 
 const StartupsSection: React.FC = () => {
   return (
-    <section id="startups" className="section-padding bg-gradient-to-b from-white to-gray-50">
-      <div className="container-custom">
+    <section id="startups" className="py-24 relative overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <Badge className="bg-swmg-light text-swmg-primary hover:bg-swmg-light mb-4">Casos de Sucesso</Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-swmg-dark mb-4">Startups nascidas no Startup Weekend</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <Badge className="bg-red-600/10 text-red-600 hover:bg-red-600/20 mb-4">
+            Casos de Sucesso
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Startups nascidas no Startup Weekend
+          </h2>
+          <p className="text-slate-600 max-w-2xl mx-auto">
             Conheça algumas das empresas de sucesso que nasceram durante os eventos do Startup Weekend em Minas Gerais.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {startups.map(startup => (
-            <Card key={startup.id} className="group overflow-hidden transition-all duration-300 hover:shadow-xl animate-slide-up border-0 shadow-lg hover:-translate-y-1">
+            <Card key={startup.id} className="group overflow-hidden transition-all duration-300 hover:shadow-xl animate-slide-up border-0 shadow-lg hover:-translate-y-1 bg-white/80 backdrop-blur-sm">
               <div className={`h-3 bg-gradient-to-r ${startup.color}`}></div>
               <CardHeader className="relative pb-4">
                 <div className="flex justify-between items-start">
@@ -83,26 +86,26 @@ const StartupsSection: React.FC = () => {
               </CardHeader>
               
               <CardContent>
-                <p className="mb-6 text-gray-600 leading-relaxed">{startup.description}</p>
+                <p className="mb-6 text-slate-600 leading-relaxed">{startup.description}</p>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 transform transition-all duration-300 hover:shadow-md">
-                    <p className="text-gray-500 text-xs mb-1">Investimento</p>
-                    <p className="font-bold text-swmg-primary">{startup.funding}</p>
+                  <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-slate-100/50 transform transition-all duration-300 hover:shadow-md">
+                    <p className="text-slate-500 text-xs mb-1">Investimento</p>
+                    <p className="font-bold text-red-600">{startup.funding}</p>
                   </div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 transform transition-all duration-300 hover:shadow-md">
-                    <p className="text-gray-500 text-xs mb-1">Status</p>
-                    <p className="font-bold text-swmg-dark">{startup.status}</p>
+                  <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-slate-100/50 transform transition-all duration-300 hover:shadow-md">
+                    <p className="text-slate-500 text-xs mb-1">Status</p>
+                    <p className="font-bold text-slate-900">{startup.status}</p>
                   </div>
                 </div>
               </CardContent>
 
-              <CardFooter className="bg-gray-50/50 border-t border-gray-100">
-                <div className="flex items-center text-sm text-gray-600">
+              <CardFooter className="bg-slate-50/50 backdrop-blur-sm border-t border-slate-100/50">
+                <div className="flex items-center text-sm text-slate-600">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
                     <polyline points="15 10 20 15 15 20"/>
                     <path d="M4 4v7a4 4 0 0 0 4 4h12"/>
                   </svg>
-                  <span className="group-hover:text-swmg-primary transition-colors">
+                  <span className="group-hover:text-red-600 transition-colors">
                     Nasceu no SW {startup.city} {startup.year}
                   </span>
                 </div>
@@ -111,21 +114,23 @@ const StartupsSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-20 bg-gradient-to-br from-swmg-light via-white to-swmg-light p-8 rounded-2xl shadow-lg">
+        <div className="mt-20 bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-slate-100/50">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-left">
-              <h3 className="text-2xl md:text-3xl font-bold text-swmg-dark mb-3">Sua startup pode ser a próxima!</h3>
-              <p className="text-gray-600 text-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
+                Sua startup pode ser a próxima!
+              </h3>
+              <p className="text-slate-600 text-lg">
                 Já são mais de 30 startups surgidas do Circuito Mineiro de Startup Weekend.
               </p>
             </div>
             <div className="flex gap-6">
               {["2021", "2022", "2023", "2024"].map(year => (
                 <div key={year} className="text-center transform transition-all duration-300 hover:scale-105">
-                  <div className="w-20 h-20 rounded-2xl bg-white shadow-lg flex items-center justify-center mb-2 border border-gray-100">
-                    <span className="text-swmg-primary font-bold text-xl">{year}</span>
+                  <div className="w-20 h-20 rounded-2xl bg-white/90 backdrop-blur-sm shadow-lg flex items-center justify-center mb-2 border border-slate-100/50">
+                    <span className="text-red-600 font-bold text-xl">{year}</span>
                   </div>
-                  <span className="text-sm font-medium text-gray-600">{parseInt(year) - 2017} startups</span>
+                  <span className="text-sm font-medium text-slate-600">{parseInt(year) - 2017} startups</span>
                 </div>
               ))}
             </div>

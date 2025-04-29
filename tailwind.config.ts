@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -25,11 +26,11 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         swmg: {
-          primary: '#E31C2C',
-          secondary: '#FFFFFF',
-          accent: '#1A1A1A',
-          light: '#FFF5F5',
-          dark: '#8B0000'
+          primary: '#0f172a',      // slate-900 - Representing the dark blue in MG flag
+          secondary: '#dc2626',    // red-600 - Representing the red in MG flag
+          accent: '#334155',       // slate-700 - Dark text
+          light: '#f8fafc',        // slate-50 - Light background
+          dark: '#020617'          // slate-950 - Darker version of primary
         },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
@@ -99,19 +100,53 @@ export default {
         'slide-up': {
           '0%': { transform: 'translateY(10px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' }
+        },
+        'ripple': {
+          '0%': { transform: 'scale(0)', opacity: '1' },
+          '100%': { transform: 'scale(4)', opacity: '0' }
+        },
+        'float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' }
+        },
+        'wave': {
+          '0%': { transform: 'translateX(0) translateY(0)' },
+          '50%': { transform: 'translateX(20px) translateY(-5px)' },
+          '100%': { transform: 'translateX(0) translateY(0)' }
+        },
+        'pulse-red': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.7' }
+        },
+        'gradient-shift': {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' }
+        },
+        'shine': {
+          '0%': { backgroundPosition: '-100%' },
+          '100%': { backgroundPosition: '200%' }
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in': 'fade-in 0.5s ease-out',
-        'slide-up': 'slide-up 0.5s ease-out'
+        'slide-up': 'slide-up 0.5s ease-out',
+        'ripple': 'ripple 0.7s ease-out',
+        'float': 'float 6s ease-in-out infinite',
+        'wave': 'wave 10s ease-in-out infinite',
+        'float-slow': 'float 8s ease-in-out infinite',
+        'wave-slow': 'wave 15s ease-in-out infinite',
+        'pulse-red': 'pulse-red 2s ease-in-out infinite',
+        'gradient-shift': 'gradient-shift 4s ease infinite',
+        'shine': 'shine 2s linear infinite'
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        heading: ['Poppins', 'sans-serif']
+        sans: ['Open Sans', 'sans-serif'],
+        heading: ['Montserrat', 'sans-serif']
       }
     }
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;
