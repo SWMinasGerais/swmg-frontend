@@ -1,26 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mg-startup-pulse</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>SWMG | Circuito Mineiro de Startup Weekend</title>
+    <meta name="description" content="Transformando ideias em startups em 54h. O Circuito Mineiro de Startup Weekend reúne empreendedores, designers e desenvolvedores para criar o futuro da inovação em nosso estado." />
+    <meta name="author" content="SWMG" />
+    <meta name="keywords" content="startup weekend, empreendedorismo, minas gerais, startups, inovação, evento, belo horizonte, uberlândia, juiz de fora, montes claros, hackathon" />
 
-    <meta property="og:title" content="mg-startup-pulse" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="SWMG | Circuito Mineiro de Startup Weekend" />
+    <meta property="og:description" content="Transformando ideias em startups em 54h. O Circuito Mineiro reúne empreendedores, designers e desenvolvedores para criar o futuro da inovação em nosso estado." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:url" content="https://startupweekendmg.com/" />
+    <meta property="og:image" content="/opengraph-image.png" />
+    <meta property="og:locale" content="pt_BR" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:title" content="SWMG | Circuito Mineiro de Startup Weekend" />
+    <meta name="twitter:description" content="Transformando ideias em startups em 54h. Eventos em Belo Horizonte, Uberlândia, Juiz de Fora e mais cidades mineiras." />
+    <meta name="twitter:image" content="/opengraph-image.png" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://startupweekendmg.com/" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SWMG",
+        "url": "https://startupweekendmg.com",
+        "logo": "https://startupweekendmg.com/logo.png",
+        "description": "Transformando ideias em startups em 54h. O Circuito Mineiro de Startup Weekend reúne empreendedores, designers e desenvolvedores para criar o futuro da inovação em nosso estado.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Belo Horizonte",
+          "addressRegion": "MG",
+          "addressCountry": "BR"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contato@startupweekendmg.com",
+          "contactType": "customer support"
+        },
+        "sameAs": [
+          "https://www.facebook.com/startupweekendmg",
+          "https://www.instagram.com/startupweekendmg",
+          "https://www.linkedin.com/company/startup-weekend-mg"
+        ]
+      }
+    </script>
+    
+    <!-- Event structured data for the next event -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Startup Weekend BH - EdTech & Future of Learning",
+        "startDate": "2023-10-15T18:00:00-03:00",
+        "endDate": "2023-10-17T21:00:00-03:00",
+        "location": {
+          "@type": "Place",
+          "name": "Belo Horizonte",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Belo Horizonte",
+            "addressRegion": "MG",
+            "addressCountry": "BR"
+          }
+        },
+        "image": "https://startupweekendmg.com/opengraph-image.png",
+        "description": "Evento de 54h focado em inovação educacional e futuro da aprendizagem em Belo Horizonte.",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/LimitedAvailability",
+          "price": "200.00",
+          "priceCurrency": "BRL",
+          "url": "https://startupweekendmg.com/eventos/bh-edtech-2023"
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Startup Weekend MG",
+          "url": "https://startupweekendmg.com"
+        }
+      }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

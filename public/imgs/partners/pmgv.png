@@ -1,0 +1,18 @@
+<script type="text/javascript"> console.log('Message:Buffer cannot be null.\r\nParameter name: buffer\r\nStackTrace:   at System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)\r\n   at Arquivo.OpenBinaryFromFileTable(String connectionString, String nmArquivo)\r\n   at Arquivo.GetConteudo(String connectionString, String idCliente, ArquivoOrigem cdOrigem, String nmArquivo)\r\n   at abrir_arquivo.OpenFileinBrowser(String nomeArquivo, AbrirArquivo abArq, String nome, ArquivoOrigem origem)\r\nFile:\u0027GOVERNADORVALADARES/processolegislativo/{bf0c0fea-ff56-53d4-b7d8-ee676d1e6b09}.png\u0027'); </script><script type="text/javascript"> console.log('Message:Buffer cannot be null.\r\nParameter name: buffer\r\nStackTrace:   at abrir_arquivo.OpenFileinBrowser(String nomeArquivo, AbrirArquivo abArq, String nome, ArquivoOrigem origem)\r\n   at abrir_arquivo.Page_Load(Object sender, EventArgs e)'); </script><script type="text/javascript"> alert('Arquivo não encontrado'); history.back(); </script>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <body>
+        <form method="post" action="/abrir_arquivo.aspx/logo_prefeitura?cdlocal=2&amp;arquivo={bf0c0fea-ff56-53d4-b7d8-ee676d1e6b09}.png" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="BGJ7rg7Q8s64fLiADdF60MmXu4XNJl7MhurGKydYo+jF9pYOedzRoiHEJa04w0itvEFPhzUI9eC/c0iwojz0EfiO0ZrTko+heIhQn3kjSWj/YcWLC08qFZjBV0zgClvDwqh24wy7amE7kSLsU0DwrlVKiJALIOfMt6fbRYS+SGyOBR3zrYWfwH1EMsNz9TJPFkzXaYswBeA0+facQClwOdIst3kVP4o1B//qusjLOcARxK9QO6w1eR1XnUenPM4/Qy8psUQkBPuKOGvxmmabapIXLdg=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D2CBF050" />
+</div>
+        </form>
+    </body>
+</html>

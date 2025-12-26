@@ -1,21 +1,22 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
-import EventsSection from '@/components/EventsSection';
-import AboutSection from '@/components/AboutSection';
-import CasesSection from '@/components/CasesSection';
-import EcosystemSection from '@/components/EcosystemSection';
-import MentorshipSection from '@/components/MentorshipSection';
-import TeamSection from '@/components/TeamSection';
-import BlogSection from '@/components/BlogSection';
-import FaqSection from '@/components/FaqSection';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/layout/Navbar';
+import HeroSection from '@/components/sections/HeroSection';
+import EventsSection from '@/components/sections/EventsSection';
+import AboutSection from '@/components/sections/AboutSection';
+import CasesSection from '@/components/sections/CasesSection';
+import EcosystemSection from '@/components/sections/EcosystemSection';
+import MentorshipSection from '@/components/sections/MentorshipSection';
+import TeamSection from '@/components/sections/TeamSection';
+import BlogSection from '@/components/sections/BlogSection';
+import FaqSection from '@/components/sections/FaqSection';
+import Footer from '@/components/layout/Footer';
 import { Toaster } from "@/components/ui/toaster";
-import MentorsSection from '@/components/MentorsSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import PartnersSection from '@/components/PartnersSection';
-import StartupsSection from '@/components/StartupsSection';
+import MentorsSection from '@/components/sections/MentorsSection';
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
+import PartnersSection from '@/components/sections/PartnersSection';
+import StartupsSection from '@/components/sections/StartupsSection';
 import ParallaxBackground from '@/components/ParallaxBackground';
+import SponsorPricingSection from '@/components/organisms/SponsorPricingSection';
 
 // Schema JSON-LD for SEO
 const schemaJSONLD = {
@@ -68,7 +69,6 @@ const Index: React.FC = () => {
         <HeroSection />
         <AboutSection />
         <EventsSection />
-        <StartupsSection />
         <CasesSection />
         <EcosystemSection />
         <MentorshipSection />
@@ -76,6 +76,7 @@ const Index: React.FC = () => {
         <TeamSection />
         <TestimonialsSection />
         <PartnersSection />
+        <SponsorPricingSection />
         <BlogSection />
         <FaqSection />
       </main>

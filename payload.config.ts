@@ -14,7 +14,7 @@ const parseConnectionString = (url: string) => {
   if (!url) return null;
   
   try {
-    const regex = /^postgresql:\/\/([^:]+):([^@]+)@([^\/]+)\/([^?]+).*$/;
+    const regex = /^postgresql:\/\/([^:]+):([^@]+)@([^/]+)\/([^?]+).*$/;
     const matches = url.match(regex);
     
     if (matches) {

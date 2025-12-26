@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html prefix="og: http://ogp.me/ns#" class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html prefix="og: http://ogp.me/ns#" class="no-js" lang="pt-br" dir="ltr"> <!--<![endif]-->
+<head>
+    <!--[if lt IE 9]>
+    <script src="/templates/padraogoverno01/js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/templates/padraogoverno01/bootstrap/css/bootstrap.min.css" type='text/css'/>
+    <link rel="stylesheet" href="/templates/padraogoverno01/css/template-verde.css" type='text/css'/>
+    		<link rel="stylesheet" href="/templates/padraogoverno01/css/icones-bmp-verde.css" type='text/css'/>
+		    <link rel="stylesheet" href="/templates/padraogoverno01/font-awesome/css/font-awesome.min.css" type='text/css'/>
+    <link rel="stylesheet" href="/templates/padraogoverno01/css/custom.css" type='text/css'/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" href="/templates/padraogoverno01/css/ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="/templates/padraogoverno01/css/ie8.css" />
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/templates/padraogoverno01/css/ie7.css" />
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome-ie7.min.css" />
+    <![endif]-->    
+        <base href="https://portal.ifsuldeminas.edu.br/images/logo_ifsuldeminas_png.png" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="O Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas é uma instituição que oferece educação superior, básica e profissional, de forma pluricurricular." />
+	<title>IFSULDEMINAS - IFSULDEMINAS</title>
+	<link href="http://portal.ifsuldeminas.edu.br/images/logo_ifsuldeminas_png.png" rel="canonical" />
+	<link href="/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="https://portal.ifsuldeminas.edu.br/index.php/component/search/?Itemid=101&amp;format=opensearch" rel="search" title="Pesquisar IFSULDEMINAS" type="application/opensearchdescription+xml" />
+	<link href="/components/com_k2/css/k2.css" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/cookiesck/assets/front.css?ver=3.5.2" rel="stylesheet" type="text/css" />
+	<link href="/modules/mod_djimageslider/themes/default/css/djimageslider.css" rel="stylesheet" type="text/css" />
+	<link href="https://portal.ifsuldeminas.edu.br/templates/padraogoverno01/html/mod_banners/css/banner-rotativo-home.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+			#cookiesck {
+				position:fixed;
+				left:0;
+				right: 0;
+				bottom: 0;
+				z-index: 1000000;
+				min-height: 30px;
+				color: #f5f5f5;
+				background: rgba(3,38,2,0.9);
+				text-align: center;
+				font-size: 14px;
+				line-height: 14px;
+			}
+			#cookiesck_text {
+				padding: 10px 0;
+				display: inline-block;
+			}
+			#cookiesck_buttons {
+				float: right;
+			}
+			.cookiesck_button,
+			#cookiesck_accept,
+			#cookiesck_decline,
+			#cookiesck_settings,
+			#cookiesck_readmore {
+				float:left;
+				padding:10px;
+				margin: 5px;
+				border-radius: 3px;
+				text-decoration: none;
+				cursor: pointer;
+				transition: all 0.2s ease;
+			}
+			#cookiesck_readmore {
+				float:right;
+			}
+			#cookiesck_accept {
+				background: #1176a6;
+				border: 2px solid #1176a6;
+				color: #f5f5f5;
+			}
+			#cookiesck_accept:hover {
+				background: transparent;
+				border: 2px solid darkturquoise;
+				color: darkturquoise;
+			}
+			#cookiesck_decline {
+				background: #000;
+				border: 2px solid #000;
+				color: #f5f5f5;
+			}
+			#cookiesck_decline:hover {
+				background: transparent;
+				border: 2px solid #fff;
+				color: #fff;
+			}
+			#cookiesck_settings {
+				background: #fff;
+				border: 2px solid #fff;
+				color: #000;
+			}
+			#cookiesck_settings:hover {
+				background: transparent;
+				border: 2px solid #fff;
+				color: #fff;
+			}
+			#cookiesck_options {
+				display: none;
+				width: 30px;
+				height: 30px;
+				border-radius: 15px;
+				box-sizing: border-box;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				margin: 10px;
+				border: 1px solid #ccc;
+				cursor: pointer;
+				background: #fff url(/plugins/system/cookiesck/assets/cookies-icon.svg) center center no-repeat;
+				background-size: 80% auto;
+				z-index: 1000000;
+			}
+			#cookiesck_options > .inner {
+				display: none;
+				width: max-content;
+				margin-top: -40px;
+				background: rgba(0,0,0,0.7);
+				position: absolute;
+				font-size: 14px;
+				color: #fff;
+				padding: 4px 7px;
+				border-radius: 3px;
+			}
+			#cookiesck_options:hover > .inner {
+				display: block;
+			}
+			#cookiesck > div {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				flex-direction: column;
+			}
+			
+			
+			iframe[data-cookiesck-src] {
+				background: #333;
+				color: #fff;
+			}
+			.cookiesck-iframe-wrap-text {
+				position: absolute;
+				width: 100%;
+				padding: 10px;
+				color: #fff;
+				top: 50%;
+				transform: translate(0,-60%);
+				text-align: center;
+			}
+			.cookiesck-iframe-wrap:hover .cookiesck-iframe-wrap-text {
+				color: #333;
+			}
+
+		
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"63f6ca99b51d4e6badf6bdaa74393b38","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/system/js/mootools-core.js?6a24bb9fcdff0ff9557e2fbe03668e68" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?6a24bb9fcdff0ff9557e2fbe03668e68" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.min.js?6a24bb9fcdff0ff9557e2fbe03668e68" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?6a24bb9fcdff0ff9557e2fbe03668e68" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?6a24bb9fcdff0ff9557e2fbe03668e68" type="text/javascript"></script>
+	<script src="/components/com_k2/js/k2.js?v2.6.7&amp;sitepath=/" type="text/javascript"></script>
+	<script src="/plugins/system/cookiesck/assets/front.js?ver=3.5.2" type="text/javascript"></script>
+	<script src="/media/djextensions/jquery-easing/jquery.easing.min.js" type="text/javascript"></script>
+	<script src="/modules/mod_djimageslider/assets/js/slider.js?v=4.4" type="text/javascript"></script>
+	<script src="https://portal.ifsuldeminas.edu.br/templates/padraogoverno01/html/mod_banners/js/banner-rotativo-home.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+var COOKIESCK = {
+	ALLOWED : ["cookiesck","cookiesckiframes","cookiesckuniquekey","jform_captchacookie","051bc03e0493f4fd450186e502f6c69b"]
+	, VALUE : 'no'
+	, UNIQUE_KEY : 'r00u59jjghmmlh67t1a9g3g8uj'
+	, LOG : '0'
+	, LIST : '{|QQ|Analytics|QQ|:{|QQ|name|QQ|:|QQ|Analytics|QQ|,|QQ|desc|QQ|:|QQ||QQ|,|QQ|platforms|QQ|:{|QQ|Google Analytics|QQ|:{|QQ|name|QQ|:|QQ|Google Analytics|QQ|,|QQ|desc|QQ|:|QQ||QQ|,|QQ|legal|QQ|:0,|QQ|cookies|QQ|:{|QQ|256c18e8-d881-11e9-8a34-2a2ae2dbcce4|QQ|:{|QQ|id|QQ|:|QQ|256c18e8-d881-11e9-8a34-2a2ae2dbcce4|QQ|,|QQ|key|QQ|:|QQ|_ga|QQ|,|QQ|desc|QQ|:|QQ|ID used to identify users|QQ|},|QQ|256c2afe-d881-11e9-8a34-2a2ae2dbcce4|QQ|:{|QQ|id|QQ|:|QQ|256c2afe-d881-11e9-8a34-2a2ae2dbcce4|QQ|,|QQ|key|QQ|:|QQ|__utmc|QQ|,|QQ|desc|QQ|:|QQ|Used only with old Urchin versions of Google Analytics and not with GA.js. Was used to distinguish between new sessions and visits at the end of a session.|QQ|},|QQ|256c1ae6-d881-11e9-8a34-2a2ae2dbcce4|QQ|:{|QQ|id|QQ|:|QQ|256c1ae6-d881-11e9-8a34-2a2ae2dbcce4|QQ|,|QQ|key|QQ|:|QQ|_gid|QQ|,|QQ|desc|QQ|:|QQ|ID used to identify users for 24 hours after last activity|QQ|},|QQ|256c1c3a-d881-11e9-8a34-2a2ae2dbcce4|QQ|:{|QQ|id|QQ|:|QQ|256c1c3a-d881-11e9-8a34-2a2ae2dbcce4|QQ|,|QQ|key|QQ|:|QQ|_gat|QQ|,|QQ|desc|QQ|:|QQ|Used to monitor number of Google Analytics server requests when using Google Tag Manager|QQ|},|QQ|256c26f8-d881-11e9-8a34-2a2ae2dbcce4|QQ|:{|QQ|id|QQ|:|QQ|256c26f8-d881-11e9-8a34-2a2ae2dbcce4|QQ|,|QQ|key|QQ|:|QQ|__utma|QQ|,|QQ|desc|QQ|:|QQ|ID used to identify users and sessions|QQ|},|QQ|256c2c3e-d881-11e9-8a34-2a2ae2dbcce4|QQ|:{|QQ|id|QQ|:|QQ|256c2c3e-d881-11e9-8a34-2a2ae2dbcce4|QQ|,|QQ|key|QQ|:|QQ|__utmz|QQ|,|QQ|desc|QQ|:|QQ|Contains information about the traffic source or campaign that directed user to the website. The cookie is set when the GA.js javascript is loaded and updated when data is sent to the Google Anaytics server|QQ|},|QQ|256c287e-d881-11e9-8a34-2a2ae2dbcce4|QQ|:{|QQ|id|QQ|:|QQ|256c287e-d881-11e9-8a34-2a2ae2dbcce4|QQ|,|QQ|key|QQ|:|QQ|__utmt|QQ|,|QQ|desc|QQ|:|QQ|Used to monitor number of Google Analytics server requests|QQ|},|QQ|2caa7a78-e93f-49ca-8fe6-1aaafae1efaa|QQ|:{|QQ|id|QQ|:|QQ|2caa7a78-e93f-49ca-8fe6-1aaafae1efaa|QQ|,|QQ|key|QQ|:|QQ|_gat_gtag_|QQ|,|QQ|desc|QQ|:|QQ|Used to set and get tracking data|QQ|},|QQ|d7496a0e-7f4b-4e20-b288-9d5e4852fa79|QQ|:{|QQ|id|QQ|:|QQ|d7496a0e-7f4b-4e20-b288-9d5e4852fa79|QQ|,|QQ|key|QQ|:|QQ|_ga_|QQ|,|QQ|desc|QQ|:|QQ|ID used to identify users|QQ|},|QQ|256c29c8-d881-11e9-8a34-2a2ae2dbcce4|QQ|:{|QQ|id|QQ|:|QQ|256c29c8-d881-11e9-8a34-2a2ae2dbcce4|QQ|,|QQ|key|QQ|:|QQ|__utmb|QQ|,|QQ|desc|QQ|:|QQ|Used to distinguish new sessions and visits. This cookie is set when the GA.js javascript library is loaded and there is no existing __utmb cookie. The cookie is updated every time data is sent to the Google Analytics server.|QQ|}}}}},|QQ|Marketing|QQ|:{|QQ|name|QQ|:|QQ|Marketing|QQ|,|QQ|desc|QQ|:|QQ||QQ|,|QQ|platforms|QQ|:{|QQ|Google|QQ|:{|QQ|name|QQ|:|QQ|Google|QQ|,|QQ|desc|QQ|:|QQ||QQ|,|QQ|legal|QQ|:0,|QQ|cookies|QQ|:{|QQ|f0c95579-9131-4caf-8240-51eb01be6eb9|QQ|:{|QQ|id|QQ|:|QQ|f0c95579-9131-4caf-8240-51eb01be6eb9|QQ|,|QQ|key|QQ|:|QQ|_gcl_au|QQ|,|QQ|desc|QQ|:|QQ|Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.|QQ|}}},|QQ|Facebook|QQ|:{|QQ|name|QQ|:|QQ|Facebook|QQ|,|QQ|desc|QQ|:|QQ||QQ|,|QQ|legal|QQ|:0,|QQ|cookies|QQ|:{|QQ|0d249cd5-ae35-4dbb-ad00-d5ca46948619|QQ|:{|QQ|id|QQ|:|QQ|0d249cd5-ae35-4dbb-ad00-d5ca46948619|QQ|,|QQ|key|QQ|:|QQ|_fbp|QQ|,|QQ|desc|QQ|:|QQ|Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers|QQ|}}}}},|QQ|POLÍTICA DE PRIVACIDADE E PROTEÇÃO DE DADOS PESSOAIS|QQ|:{|QQ|name|QQ|:|QQ|POLÍTICA DE PRIVACIDADE E PROTEÇÃO DE DADOS PESSOAIS|QQ|,|QQ|desc|QQ|:|QQ||QQ|,|QQ|platforms|QQ|:{|QQ|POLÍTICA DE PRIVACIDADE E PROTEÇÃO DE DADOS PESSOAIS|QQ|:{|QQ|name|QQ|:|QQ|Cookies|QQ|,|QQ|desc|QQ|:|QQ||QQ|,|QQ|legal|QQ|:0,|QQ|cookies|QQ|:{|QQ||QQ|:{|QQ|id|QQ|:|QQ||QQ|,|QQ|key|QQ|:|QQ|_gat_gtag_UA_90422784_1|QQ|,|QQ|desc|QQ|:|QQ||QQ|}}}}}}'
+	, LIFETIME : '365'
+	, DEBUG : '0'
+	, TEXT : {
+		INFO : 'Ao visitar nosso site, você concorda que estamos usando cookies para garantir que você tenha a melhor experiência.'
+		, ACCEPT_ALL : 'Aceitar todos'
+		, ACCEPT_ALL : 'Aceitar todos'
+		, DECLINE_ALL : 'Recusar todos'
+		, SETTINGS : 'Personalizar'
+		, OPTIONS : 'Opções de cookies'
+		, CONFIRM_IFRAMES : 'Por favor, confirme que você deseja habilitar os iframes'
+	}
+};
+
+if( document.readyState !== "loading" ) {
+new Cookiesck({lifetime: "365", layout: "layout1", reload: "0"}); 
+} else {
+	document.addEventListener("DOMContentLoaded", function () {
+		new Cookiesck({lifetime: "365", layout: "layout1", reload: "0"}); 
+	});
+}
+
+/*===  EASY GOOGLE ANALYTICS : START TRACKING CODE  ===*/
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-90422784-1', 'portal.ifsuldeminas.edu.br');
+	ga('send', 'pageview');
+/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
+
+	</script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Demanda facebook -->
+    <meta name="facebook-domain-verification" content="esraxjmgr34c99yk8ivmz8ce3p6f0c" />
+        		<link href='https://portal.ifsuldeminas.edu.br/templates/padraogoverno01/css/fontes.css'  rel='stylesheet' type='text/css'>
+			<script src="/media/jui/js/acoes-portal.js" type="text/javascript"></script>
+  	</script>
+      
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JC6EWKH91S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JC6EWKH91S');
+    </script>
+
+      
+    <!-- Global site tag (gtag.js) - Google Ads: 306982950 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-306982950"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-306982950');
+    </script>
+   <!-- End Global site tag (gtag.js) - Google Ads: 306982950 -->
+      
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1636119656493154');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1636119656493154&ev=PageView&noscript=1" />
+    </noscript>
+	<!-- End Facebook Pixel Code -->
+      
+    <!-- Event snippet for Website traffic conversion page -->
+     
+</head>
+<body >
+    <a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+    <noscript>
+      <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+      </div>
+    </noscript>
+    <!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+    
+    
+    <!-- Atualizado com a branch master do github  background:#7F7F7F-->
+  	<div id="barra-brasil" style="background:#f1f1f1; height: 20px; padding:0 0 0 10px;display:block;">
+  		<ul id="menu-barra-temp" style="list-style:none;">
+    		<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+        		<a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+    		</li>
+    		<li>
+       		<!-- <a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a> -->
+    		</li>
+  		</ul>
+    </div>
+    <!-- Fim Atualização com a branch master do github -->
+    
+    
+    <!--  -->
+    
+    <div class="layout">
+        <header>
+            <div class="container">
+                <div class="row-fluid accessibility-language-actions-container">
+                    <div class="span6 accessibility-container">
+                        <ul id="accessibility">
+                            <li>
+                                <a accesskey="1" href="#content" id="link-conteudo">
+                                    Ir para o conte&uacute;do
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a accesskey="2" href="#navigation" id="link-navegacao">
+                                    Ir para o menu
+                                    <span>2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a accesskey="3" href="#portal-searchbox" id="link-buscar">
+                                    Ir para a busca
+                                    <span>3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a accesskey="4" href="#footer" id="link-rodape">
+                                    Ir para o rodap&eacute;
+                                    <span>4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- fim div.span6 -->
+                    <div class="span6 language-and-actions-container">
+                        		<h2 class="hide">Opções de acessibilidade</h2>
+		
+<ul class="pull-right" id="portal-siteactions">
+<li class="item-140"><a href="/index.php/acessibilidade" accesskey="5" >Acessibilidade</a></li><li class="item-141 toggle-contraste"><a class="toggle-contraste" href="#"  accesskey="6" >Alto contraste</a></li><li class="item-575"><a href="/index.php/mapa-do-site" accesskey="7" >Mapa do site</a></li></ul>
+	
+                    </div>
+                    <!-- fim div.span6 -->
+                </div>
+                <!-- fim .row-fluid -->
+                <div class="row-fluid">
+                    <div id="logo" class="span8 small">
+                        <a href="https://portal.ifsuldeminas.edu.br/index.php" title="IFSULDEMINAS">
+                            <span class="portal-title-1">INSTITUTO FEDERAL DO SUL DE MINAS GERAIS</span>
+                            <h1 class="portal-title corto">IFSULDEMINAS</h1>
+                            <span class="portal-description">Ministério da Educação</span>
+                        </a>
+                    </div>
+                    <!-- fim .span8 -->
+                    <div class="span4">
+                        	<div id="portal-searchbox" class="row">
+    	<h2 class="hidden">Buscar no portal</h2>
+    	<form action="/index.php" method="post" class="pull-right">
+ 	<fieldset>
+        <legend class="hide">Busca</legend>
+        <h2 class="hidden">Buscar no portal</h2>
+        <div class="input-append">
+        	<label for="portal-searchbox-field" class="hide">Busca: </label>
+        	<input type="text" id="portal-searchbox-field" class="searchField" placeholder="Buscar no portal" title="Buscar no portal" name="searchword">       
+            <button type="submit" class="btn searchButton"><span class="hide">Buscar</span><i class="icon-search"></i></button>
+		</div>
+		<input type="hidden" name="task" value="search" />
+		<input type="hidden" name="option" value="com_search" />
+		<input type="hidden" name="Itemid" value="101" />
+	</fieldset>
+</form>
+    </div>
+		<div id="social-icons" class="row">
+    	<h2 class="hidden">Redes Sociais</h2>
+    	
+<ul class="pull-right">
+<li class="portalredes-item item-138"><a href="https://www.facebook.com/IFSULDEMINAS" target="_blank" rel="noopener noreferrer"><i class="icon-facebook-sign"><span>Facebook</span></i></a></li><li class="portalredes-item item-257"><a href="https://www.instagram.com/ifsuldeminas/" ><i class="icon-instagram"><span>Instagram</span></i></a></li><li class="portalredes-item item-137"><a href="https://www.youtube.com/channel/UC73UAcaqQqVwu9m6ZACOaDw" target="_blank" rel="noopener noreferrer"><i class="icon-youtube"><span>YouTube</span></i></a></li><li class="portalredes-item item-136"><a href="https://x.com/ifsuldeminas" target="_blank" rel="noopener noreferrer"><i class="icon-twitter-sign"><span>Twitter</span></i></a></li></ul>
+    </div>
+	
+                    </div>
+                    <!-- fim .span4 -->
+                </div>
+                <!-- fim .row-fluid -->
+            </div>
+            <!-- fim div.container -->
+            <div class="sobre">
+                <div class="container">
+                    	<nav class="menu-servicos pull-right">
+        <h2 class="hide">Serviços</h2>
+        
+<ul>
+<li class="item-985"><a href="/index.php/governanca" >Governança</a></li><li class="item-131"><a href="https://accounts.google.com/AccountChooser?hd=ifsuldeminas.edu.br&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;osid=1&amp;service=mail&amp;ss=1&amp;ltmpl=default" target="_blank" rel="noopener noreferrer">Webmail</a></li><li class="item-802"><a href="/index.php/pdi" >PDI</a></li><li class="item-132 parent"><a href="/index.php/contato" >Contato</a></li><li class="item-135"><a href="/index.php/ouvidoria" >Ouvidoria</a></li><li class="item-134"><a href="/index.php/comunicacao" >Comunicação</a></li><li class="item-440"><a href="/index.php/cleber-avila-barbosa-2022-2026" >Agenda do Reitor</a></li><li class="item-442"><a href="https://portal.ifsuldeminas.edu.br/index.php/ultimas-noticias-ifsuldeminas" >Últimas notícias</a></li></ul>
+<span class="hide">Fim do menu de serviços</span>
+    </nav>
+	
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- fim .sobre -->
+        </header>
+        <main>
+            <div class="container">
+                
+                <div class="row-fluid">
+                                        <div id="navigation" class="span3">
+                        <a href="#" class="visible-phone visible-tablet mainmenu-toggle btn"><i class="icon-list"></i>&nbsp;Menu</a>
+                        <section id="navigation-section">
+                            <span class="hide">Início do menu principal</span>
+                            <ul class="menu">
+<li class="item-789 active"><a href="https://portal.ifsuldeminas.edu.br/index.php" ><img src="/images/logo/Logo_IFSULDEMINAS_156x160_menu-portal.png" alt="Logo" class="logoIFMenu" /></a></li></ul>
+	<nav class=" span9 ">
+		<h2 >Destaques <i class="icon-chevron-up visible-phone visible-tablet pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		
+<ul>
+<li class="item-1074"><a href="/index.php/portal-do-aluno" title="Portal do Aluno" ><img src="/images/botoes_menu_destaques/Botao_destaque_Portal_do_aluno_-_NOVO.png" alt="Portal do Aluno" /></a></li><li class="item-1075"><a href="https://portal.ifsuldeminas.edu.br/gestao-de-pessoas" title="Portal do Servidor" ><img src="/images/botoes_menu_destaques/Botao_destaque_Portal_do_servidor_-_NOVO.png" alt="Portal do Servidor" /></a></li><li class="item-546"><a href="https://portal.ifsuldeminas.edu.br/index.php/vestibular-proen" target="_blank" title="Abre página externa sobre o Vestibular da instituição " ><img src="/images/materias2018/março/15/Botao_destaque_Vestibular_-_NOVO.png" alt="Vestibular" /></a></li><li class="item-548"><a href="/index.php/concursos-menu-destaque" target="_blank" title="Abre página externa sobre concursos e processos seletivos do IFSULDEMINAS" ><img src="/images/Botões/Comunicação/Concurso.png" alt="Concursos" /></a></li><li class="item-589"><a href="/index.php/editais" title="Acesse os editais publicados pela Reitoria do IFSULDEMINAS" ><img src="/images/materias2018/março/15/Botao_destaque_Editais_-_NOVO.png" alt="Editais" /></a></li><li class="item-1317"><a href="https://portal.ifsuldeminas.edu.br/index.php/comunicacao" ><img src="/images/Botões/Comunicação/Comunicacao.png" alt="Comunicação1" /></a></li><li class="item-1077"><a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/3995-tpc" ><img src="/images/materias2018/março/15/Botao_destaque_Prestacao_de_contas_-_NOVO.png" alt="Transparência e Prestação de Contas" /></a></li></ul>
+	</nav>
+		<nav class=" span9 show-icon closed">
+		<h2 >Cursos <i class="icon-chevron-up  pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		
+<ul>
+<li class="item-1307"><a href="https://cursos.ifsuldeminas.edu.br/" >Portal de Cursos</a></li><li class="item-1076"><a href="https://portal.ifsuldeminas.edu.br/index.php/pro-reitoria-extensao/pagina-cursos-fic" >Cursos FICs</a></li></ul>
+	</nav>
+		<nav class=" span9 show-icon closed">
+		<h2 >Nossos Campi <i class="icon-chevron-up  pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		<ul class="menuspan9 show-icon closed">
+<li class="item-573 active"><a href="https://portal.cdm.ifsuldeminas.edu.br/" title="Abre a página do Campus Avançado Carmo de Minas">Carmo de Minas</a></li><li class="item-569 active"><a href="http://ifs.ifsuldeminas.edu.br/" title="Abre a página do Campus Inconfidentes">Inconfidentes</a></li><li class="item-568 active"><a href="https://portal.mch.ifsuldeminas.edu.br" title="Abre a página do Campus Machado">Machado</a></li><li class="item-567 active"><a href="http://www.muz.ifsuldeminas.edu.br/" title="Abre a página do Campus Muzambinho">Muzambinho</a></li><li class="item-571 active"><a href="https://portal.pas.ifsuldeminas.edu.br/" title="Abre a página do Campus Passos">Passos</a></li><li class="item-572 active"><a href="https://portal.pcs.ifsuldeminas.edu.br/" title="Abre a página do Campus Poços de Caldas">Poços de Caldas</a></li><li class="item-570 active"><a href="https://portal.poa.ifsuldeminas.edu.br/" title="Abre a página do Campus Pouso Alegre">Pouso Alegre</a></li><li class="item-574 active"><a href="https://portal.ifsuldeminas.edu.br/trescoracoes" title="Abre a página do Campus Três Corações">Três Corações</a></li><li class="item-1320 active"><a href="/index.php/itajuba" ><img src="/images/botoes_menu_destaques/Design_sem_nome_12.png" alt="Itajubá" /></a></li></ul>
+	</nav>
+		<nav class=" span9  show-icon closed">
+		<h2 >IFSULDEMINAS <i class="icon-chevron-up  pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		<ul class="menuspan9  show-icon closed">
+<li class="item-262 active"><a href="/index.php/o-instituto" title="O Instituto">O Instituto</a></li><li class="item-264 active"><a href="/index.php/os-campi" title="Os Campi">Os Campi</a></li><li class="item-788 active"><a href="https://poloembrapii.ifsuldeminas.edu.br/index.php" >Polo Embrapii</a></li><li class="item-263 parent active"><a href="/index.php/reitoria" title="Reitoria">Reitoria</a></li><li class="item-837 active"><a href="/index.php/orgaos-colegiados-e-comissoes-1" >Órgãos Colegiados e Comissões</a></li><li class="item-327 active"><a href="/index.php/conselho-superior-c" title="Conselho Superior">Conselho Superior</a></li><li class="item-840 active"><a href="/index.php/eleicoes-consup-2018-2020" >Eleições - Consup</a></li><li class="item-754 active"><a href="/index.php/eleicoes-no-ifsuldeminas" >Eleições no IFSULDEMINAS</a></li><li class="item-1252 active"><a href="https://portal.ifsuldeminas.edu.br/index.php/pdi" >PDI</a></li><li class="item-1041 active"><a href="/index.php/atos-normativos-e-administrativo" >Atos Normativos e administrativos</a></li><li class="item-1066 active"><a href="https://portal.ifsuldeminas.edu.br/index.php/pls" >Sustentabilidade</a></li><li class="item-1072 active"><a href="/index.php/publicacoes" >Publicações</a></li><li class="item-1089 active"><a href="/index.php/relacoes-internacionais" >Relações Internacionais</a></li></ul>
+	</nav>
+		<nav class=" span9 show-icon closed">
+		<h2 >Sistemas <i class="icon-chevron-up  pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		<ul class="menuspan9 show-icon closed">
+<li class="item-1037 active"><a href="https://sou.ifsuldeminas.edu.br/" >Sou IFSULDEMINAS</a></li><li class="item-622 active"><a href="https://gppex.ifsuldeminas.edu.br/index.php/login" title="Abre a página do sistema de Gestão de Projetos de Pesquisa e Extensão">GPPEX</a></li><li class="item-1225 active"><a href="https://gru.ifsuldeminas.edu.br/" >Pag Tesouro</a></li></ul>
+	</nav>
+		<nav class="cursos span9 show-icon closed">
+		<h2 >Pró-Reitorias  <i class="icon-chevron-up  pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		
+<ul>
+<li class="item-267"><a href="/index.php/administracao" title="Pró-Reitoria de Administração" >Administração</a></li><li class="item-268"><a href="/index.php/ensino" title="Pró-Reitoria de Ensino" >Ensino</a></li><li class="item-269"><a href="/index.php/extensao" title="Pró-Reitoria de Extensão" >Extensão </a></li><li class="item-400"><a href="/index.php/pesquisa-pos-graduacao-inovacao" title="Pró-Reitoria de Pesquisa, Pós-Graduação e Inovação" >Pesquisa, Pós-Graduação e Inovação</a></li><li class="item-1022"><a href="/index.php/gestao-de-pessoas" >Gestão de Pessoas</a></li></ul>
+	</nav>
+		<nav class=" span9 show-icon closed">
+		<h2 >Diretorias Sistêmicas <i class="icon-chevron-up  pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		<ul class="menuspan9 show-icon closed">
+<li class="item-270 active"><a href="/index.php/desenvolvimento-institucional" title="Pró-Reitoria de Desenvolvimento Institucional">Diretoria de Desenvolvimento e Relações Institucionais</a></li><li class="item-886 active"><a href="https://portal.ifsuldeminas.edu.br/index.php/tic" >Diretoria da Tecnologia da Informação</a></li></ul>
+	</nav>
+		<nav class=" span9 show-icon closed">
+		<h2 >Acesso à Informação <i class="icon-chevron-up  pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		
+<ul>
+<li class="item-1079"><a href="/index.php/politica-de-privacidade" >Política de Privacidade</a></li><li class="item-1275"><a href="https://centralpaineis.cgu.gov.br/visualizar/corregedorias" >Painel das Corregedorias</a></li><li class="item-112"><a href="/index.php/institucional" title="Institucional" >Institucional</a></li><li class="item-653"><a href="/index.php/acoeseprogramas2" title="Ações e Programas" >Ações e programas</a></li><li class="item-827"><a href="/index.php/participacao-social" >Participação Social</a></li><li class="item-113"><a href="/index.php/acoes-e-programas" title="Auditorias" >Auditorias</a></li><li class="item-115"><a href="/index.php/convenios" title="Convênios" >Convênios e transferências</a></li><li class="item-116"><a href="/index.php/despesas" title="Despesas" >Receitas e Despesas</a></li><li class="item-117"><a href="/index.php/licitacoes-e-contratos" title="Licitações e Contratos" >Licitações e contratos</a></li><li class="item-118"><a href="/index.php/servidores" title="Servidores" >Servidores/Setores</a></li><li class="item-1297"><a href="/index.php/contatos-gerais" >☎️Contatos gerais</a></li><li class="item-119"><a href="/index.php/informacoes-classificadas" title="Informações classificadas" >Informações classificadas</a></li><li class="item-120"><a href="/index.php/servico-de-informacao-ao-cidadao-sic" >Serviço de Informação ao Cidadão (SIC)</a></li><li class="item-829"><a href="/index.php/dados-abertos" >Dados Abertos</a></li><li class="item-1038"><a href="http://plataformanilopecanha.mec.gov.br/" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,');return false;" >Plataforma Nilo Peçanha</a></li><li class="item-1293"><a href="https://integra.ifsuldeminas.edu.br/" >Portal da Inovação Integra</a></li><li class="item-922"><a href="/index.php/corregedoria" >Corregedoria </a></li><li class="item-923"><a href="/index.php/fundacoes-de-apoio" >Fundações de Apoio</a></li><li class="item-945"><a href="https://portal.ifsuldeminas.edu.br/index.php/pdi" >Plano de Desenvolvimento Institucional (PDI)</a></li><li class="item-888"><a href="/index.php/servidores-terceirizados" >Terceirizados</a></li><li class="item-691"><a href="/index.php/gestao-de-imoveis" title="Gestão de Imóveis" >Gestão de Imóveis</a></li><li class="item-713"><a href="/index.php/carta-de-servico-ao-cidadao" title="Carta de Serviço ao Cidadão" >Carta de Serviço ao Cidadão</a></li></ul>
+	</nav>
+		<nav class="cursos span9 show-icon closed">
+		<h2 >Portal Antigo <i class="icon-chevron-up  pull-right"></i></h2><!-- visible-phone visible-tablet -->
+		
+<ul>
+<li class="item-468"><a href="https://memoria.ifsuldeminas.edu.br/index.php" target="_blank" title="Abre outra página para acesso ao portal antigo do Instituto Federal do Sul de Minas." >Acesse</a></li></ul>
+	</nav>
+	
+                            <span class="hide">Fim do menu principal</span>
+                        </section>
+                    </div>
+                    <!-- fim #navigation.span3 -->
+                                        <div id="content" class="span9">
+                        <section id="content-section">
+                            <span class="hide">Início do conteúdo da página</span>
+
+                            
+                            
+                                <div class="carousel banner-carousel slide bannergroup " id="banner-carousel-494">
+<div class="carousel-inner">
+	<div class="banneritem item active">
+																																																																		<a
+							href="/index.php/component/banners/click/527"
+							title="Quer ser nosso aluno?">
+							<img
+								src="https://portal.ifsuldeminas.edu.br/images/banners/bannerstopo2024/Banner_interesse_em_Estudar-02.png"
+								alt="Receba nossas oportunidades✍🏻"
+																							/>
+						</a>
+															<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/527">
+					Receba nossas oportunidades✍🏻				</a>
+			</h1>
+							<div class="clr"></div>
+	</div>
+	<div class="banneritem item ">
+																																																																		<a
+							href="/index.php/component/banners/click/540"
+							title="Trabalhe Conosco">
+							<img
+								src="https://portal.ifsuldeminas.edu.br/images/banners/bannerstopo2024/banner_trabalhe_conosco.png"
+								alt="Venha trabalhar conosco! 💼"
+																							/>
+						</a>
+															<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/540">
+					Venha trabalhar conosco! 💼				</a>
+			</h1>
+							<div class="clr"></div>
+	</div>
+	<div class="banneritem item ">
+																																																																		<a
+							href="/index.php/component/banners/click/528"
+							title="Acesse as redes sociais do IFSULDEMINAS">
+							<img
+								src="https://portal.ifsuldeminas.edu.br/images/banners/bannerstopo2024/Banner_redes_sociais_IFSULDEMINAS-02.png"
+								alt="Acesse nossas redes sociais 📲"
+																							/>
+						</a>
+															<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/528">
+					Acesse nossas redes sociais 📲				</a>
+			</h1>
+							<div class="clr"></div>
+	</div>
+	<div class="banneritem item ">
+																																																																		<a
+							href="/index.php/component/banners/click/526"
+							title="Fale com os campi do IFSULDEMINAS">
+							<img
+								src="https://portal.ifsuldeminas.edu.br/images/banners/bannerstopo2024/WhatsApp_Image_2024-03-28_at_17.07.33.jpeg"
+								alt="Fale com a gente! 📞💬"
+																							/>
+						</a>
+															<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/526">
+					Fale com a gente! 📞💬				</a>
+			</h1>
+							<div class="clr"></div>
+	</div>
+	<div class="banneritem item ">
+																																																																		<a
+							href="/index.php/component/banners/click/542"
+							title="Portal de Cursos">
+							<img
+								src="https://portal.ifsuldeminas.edu.br/images/bannersacessorapido/2024/BANNER_750_150.png"
+								alt="Confira as informações de todos os cursos do IFSULDEMINAS"
+																							/>
+						</a>
+															<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/542">
+					Confira as informações de todos os cursos do IFSULDEMINAS				</a>
+			</h1>
+							<div class="clr"></div>
+	</div>
+	
+</div>
+<ol class="carousel-indicators carousel-indicators-custom">
+			<li data-slide-to="0" data-target="#banner-carousel-494" class="active"><a href="#" title="Quer ser nosso aluno?">0</a></li>
+			<li data-slide-to="1" data-target="#banner-carousel-494" class=""><a href="#" title="Trabalhe Conosco">1</a></li>
+			<li data-slide-to="2" data-target="#banner-carousel-494" class=""><a href="#" title="Acesse as redes sociais do IFSULDEMINAS">2</a></li>
+			<li data-slide-to="3" data-target="#banner-carousel-494" class=""><a href="#" title="Fale com os campi do IFSULDEMINAS">3</a></li>
+			<li data-slide-to="4" data-target="#banner-carousel-494" class="last"><a href="#" title="Portal de Cursos">4</a></li>
+</ol>
+</div>
+<div class="carousel banner-carousel slide bannergroup banner-noticias-topo" id="banner-carousel-202">
+<div class="carousel-inner">
+	<div class="banneritem item active">
+																																																																		<a
+							href="/index.php/component/banners/click/561"
+							title="Vestibular 2025/2º semestre">
+							<img
+								src="https://portal.ifsuldeminas.edu.br/images/Vestibular_2025-2º/Sem_título-3_Prancheta_1.png"
+								alt="🎉 Mais de 800 vagas gratuitas em cursos técnicos e superiores pra você!"
+																							/>
+						</a>
+															<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/561">
+					🎉 Mais de 800 vagas gratuitas em cursos técnicos e superiores pra você!				</a>
+			</h1>
+							<div class="clr"></div>
+	</div>
+	<div class="banneritem item ">
+																																																																		<a
+							href="/index.php/component/banners/click/559"
+							title="Técnico em Mecânica EaD">
+							<img
+								src="https://portal.ifsuldeminas.edu.br/images/Banner_750x195_EAD_Mec_1.png"
+								alt="Vagas remanescentes para o curso Técnico Subsequente em mecânica Ead - Jovem Aprendiz  "
+																							/>
+						</a>
+															<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/559">
+					Vagas remanescentes para o curso Técnico Subsequente em mecânica Ead - Jovem Aprendiz  				</a>
+			</h1>
+							<div class="clr"></div>
+	</div>
+	<div class="banneritem item ">
+																																																																		<a
+							href="/index.php/component/banners/click/385"
+							title="DIRF 2025 - Comprovante Anual de Rendimentos">
+							<img
+								src="https://portal.ifsuldeminas.edu.br/images/banners/bannerstopo2025/Imposto_de_Renda_750x195_2025-2024.jpg"
+								alt="Baixe comprovante anual de rendimento ano-base 2024"
+																							/>
+						</a>
+															<div class="faixa"></div>
+			<h1>
+				<a href="/index.php/component/banners/click/385">
+					Baixe comprovante anual de rendimento ano-base 2024				</a>
+			</h1>
+							<div class="clr"></div>
+	</div>
+	
+</div>
+<ol class="carousel-indicators carousel-indicators-custom">
+			<li data-slide-to="0" data-target="#banner-carousel-202" class="active"><a href="#" title="Vestibular 2025/2º semestre">0</a></li>
+			<li data-slide-to="1" data-target="#banner-carousel-202" class=""><a href="#" title="Técnico em Mecânica EaD">1</a></li>
+			<li data-slide-to="2" data-target="#banner-carousel-202" class="last"><a href="#" title="DIRF 2025 - Comprovante Anual de Rendimentos">2</a></li>
+</ol>
+</div>
+		<div class="row-fluid module ">
+							<div class="outstanding-header">			 	<h2 class="outstanding-title"><span>Notícias</span></h2>
+			 	</div>										<div class="module span4 no-margin">
+	
+		<p class="subtitle">
+		Reitor nos campi	</p>
+	
+				
+			<h4 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/ultimas-noticias-ifsuldeminas/6942-reitor-nos-campi" >
+					Reitor abre o ano letivo com visitas aos campi.				</a>
+			</h4>
+		
+		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/ultimas-noticias-ifsuldeminas/6942-reitor-nos-campi" class="img-rounded">
+				<img src="/images/bannersacessorapido/2025/WhatsApp_Image_2025-04-30_at_10.29.39.jpeg" width="230" height="136" alt="" />
+			</a>
+						
+	
+	
+	
+	</div>	<div class="module span8">
+	
+		<p class="subtitle">
+		Excelência em ensino	</p>
+	
+				
+			<h4 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/ultimas-noticias-ifsuldeminas/6923-igc-4" >
+					IFSULDEMINAS mantém nota 4 no Índice Geral de Cursos do MEC				</a>
+			</h4>
+		
+	
+	
+	
+	</div>	<div class="module span8">
+	
+		<p class="subtitle">
+		Evento	</p>
+	
+				
+			<h4 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/6937-1-encontro-dos-pibidianos-do-ifsuldeminas" >
+					IFSULDEMINAS realiza 1º Encontro dos Pibidianos e lança e-book com experiências exitosas do PIBID				</a>
+			</h4>
+		
+	
+	
+	
+	</div>	<div class="module span8">
+	
+		<p class="subtitle">
+		Transformar Sustentável	</p>
+	
+				
+			<h4 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/pro-reitoria-extensao/editais-proex/171-bolsas-de-extensao/6918-119-2025" >
+					Aberto cadastro de instituições parceiras para recebimento de doações de itens do programa				</a>
+			</h4>
+		
+	
+	
+	
+	</div>
+	<div class="outstanding-footer">
+		<a href="https://portal.ifsuldeminas.edu.br/index.php/ultimas-noticias-ifsuldeminas" class="outstanding-link">
+							<span class="text">Últimas notícias</span>
+						<span class="icon-box">                                          
+		      <i class="icon-angle-right icon-light"><span class="hide">&nbsp;</span></i>
+		    </span>
+		</a>	
+	</div>
+	
+					</div>
+				<div class="row-fluid module ">
+							<div class="outstanding-header">			 	<h2 class="outstanding-title"><span>Oportunidades</span></h2>
+			 	</div>									<div class="chamadas-secundarias">
+	<div class="module span4 no-margin">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/4853-encceja-2" class="img-rounded">
+				<img src="/images/matérias_2022/encceja/encceja_-.jpg" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		ENCCEJA 2024	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/4853-encceja-2" >
+					Clique e veja o resultado do ENCCEJA 2024, além de informações sobre o exame				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/6144-pos-graduacoes-latu-e-stricto-sensu-2024" class="img-rounded">
+				<img src="/images/pos-graduação/2024/Banner_-_pós-graduação_CAPA.png" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Mestrados e Especializações	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/6144-pos-graduacoes-latu-e-stricto-sensu-2024" >
+					Confira as oportunidades de pós-graduações disponíveis pra você!				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/estagio-remunerado-nao-obrigatorio/aberto-estagio-remunerado-nao-obrigatorio" class="img-rounded">
+				<img src="/images/Estágio_não_obrigatório_-_diversas_áreas/2024/PORTAL_ESTAGIO_230X136.png" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Estágio - alunos IFSULDEMINAS	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/estagio-remunerado-nao-obrigatorio/aberto-estagio-remunerado-nao-obrigatorio" >
+					Vagas abertas para os Campi Machado e Três Corações. Confira!				</a>
+			</h3>
+	
+		</div>
+</div>	
+					</div>
+		<div class="row-fluid">
+		
+	<div class="module  variacao-module-00">
+						
+			<div class="chamadas-secundarias">
+	<div class="module span4 no-margin">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/5931-intercambio-ifsuldeminas" class="img-rounded">
+				<img src="/images/conteudo/Intercâmbio/INTERCAMBIO_IFSULDEMINAS.png" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Intercâmbio IFSULDEMINAS	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/5931-intercambio-ifsuldeminas" >
+					Confira os editais de Intercâmbio Internacional e de Estágio entre IFs				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/6724-auxilios-estudantis-2025" class="img-rounded">
+				<img src="/images/fotosmateriadestaque/2021/Página_-_editais_de_Auxílios_do_IFSULDEMINAS/Banner_auxilios-02.png" width="230" height="136" alt="Publicações" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Auxílios	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/6724-auxilios-estudantis-2025" >
+					Confira as modalidades de auxílio disponíveis aos estudantes do IFSULDEMINAS				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/estagio-remunerado-nao-obrigatorio-2" class="img-rounded">
+				<img src="/images/Botões/Progep_-_Concursos/Banner_300.png" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Concurso Público	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/estagio-remunerado-nao-obrigatorio-2" >
+					Confira os editais de concurso docente e técnico em andamento				</a>
+			</h3>
+	
+		</div>
+</div>			
+	
+										
+			
+			</div>
+<div class="module  variacao-module-00">
+						
+			<div class="chamadas-secundarias">
+	<div class="module span4 no-margin">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/pro-reitoria-extensao/pagina-cursos-fic" class="img-rounded">
+				<img src="/images/auxilios_estudantis/2023/PORTAL_FIC_230X136.png" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Cursos FIC	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/pro-reitoria-extensao/pagina-cursos-fic" >
+					Oportunidades para cursos de capacitação profissinal - vagas para alunos e instrutores				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/6738-bolsas-2025-oportunidades-para-servidores-e-estudantes-do-ifsuldeminas" class="img-rounded">
+				<img src="/images/auxilios_estudantis/Bolsas_2024/Banner_Oportunidades_de_Bolsas_2024_IFSULDEMINAS_-_230x136-01.png" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Bolsas - Estudantes e Servidores	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/6738-bolsas-2025-oportunidades-para-servidores-e-estudantes-do-ifsuldeminas" >
+					Confira as oportunidades de Bolsas disponíveis para servidores e estudantes				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/processos-seletivos/professor-substituto/abertos" class="img-rounded">
+				<img src="/images/professor_substituto/2024/PORTAL_PROF_SUSBTITUICAO_230X136.png" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Professor Substituto	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/processos-seletivos/professor-substituto/abertos" >
+					Inscrições abertas para as áreas de Matemática, Moda, Filosofia e Biologia. Confira!				</a>
+			</h3>
+	
+		</div>
+</div>			
+	
+										
+			
+			</div>
+
+	</div>
+		<div class="row-fluid module ">
+							<div class="outstanding-header">			 	<h2 class="outstanding-title"><span>Eventos</span></h2>
+			 	</div>									<div class="chamadas-secundarias">
+	<div class="module span4 no-margin">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/ultimas-noticias-ifsuldeminas/6924-lancamento-mais-ciencia-na-escola" class="img-rounded">
+				<img src="/images/matérias_2025/abril/maisciencianaescola/autoridades.jpeg" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Mais Ciência na Escola	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/ultimas-noticias-ifsuldeminas/6924-lancamento-mais-ciencia-na-escola" >
+					Instituto participa de lançamento do projeto 				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/pro-reitoria-pesquisa-pos-graduacao-inovacao/editais-pppi/6884-edital-n-94-2025-3-desafio-maker-do-ifsuldeminas" class="img-rounded">
+				<img src="/images/banners/banners_diversos/Desafio_300_x_200_px_1.png" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		CONECTIVIDADE E SUSTENTABILIDADE	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/pro-reitoria-pesquisa-pos-graduacao-inovacao/editais-pppi/6884-edital-n-94-2025-3-desafio-maker-do-ifsuldeminas" >
+					3º Desafio Maker lança edital com inscrições até 12 de maio				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://portal.ifsuldeminas.edu.br/index.php/itajuba/6933-levantamento-das-demandas-por-cursos-em-itajuba" class="img-rounded">
+				<img src="/images/matérias_2025/abril/levantamento_cursos_itajubá/tarde_reuniao.jpg" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Campus Itajubá	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifsuldeminas.edu.br/index.php/itajuba/6933-levantamento-das-demandas-por-cursos-em-itajuba" >
+					Início do levantamento de demandas por cursos				</a>
+			</h3>
+	
+		</div>
+</div>	
+					</div>
+				<div class="row-fluid module ">
+							<div class="outstanding-header">			 	<h2 class="outstanding-title"><span>Acontece nos Campi</span></h2>
+			 	</div>									<div class="chamadas-secundarias">
+	<div class="module span4 no-margin">		
+						
+			<a href="https://portal.ifs.ifsuldeminas.edu.br/index.php/component/content/article?id=2158" class="img-rounded">
+				<img src="/images/Acontece_nos_campi/2025/abril/inconfidentes_04.04.25.jpg" width="230" height="136" alt="Foto no tamanho 230 pixels de largura por 136 pixels de altura" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Inconfidentes	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.ifs.ifsuldeminas.edu.br/index.php/component/content/article?id=2158" >
+					Professores da área de Agrimensura e Cartográfica firmam parceria com Inatel				</a>
+			</h3>
+	
+			<p class="description">&nbsp;
+</p>		</div>	<div class="module span4">		
+						
+			<a href="https://portal.mch.ifsuldeminas.edu.br/noticias-extensao/4497-visita-tecnica-accenture" class="img-rounded">
+				<img src="/images/Acontece_nos_campi/2025/abril/machado_04.04.25.jpg" width="230" height="136" alt="Publicações" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Machado	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.mch.ifsuldeminas.edu.br/noticias-extensao/4497-visita-tecnica-accenture" >
+					Campus leva estudantes a São Paulo para imersão no mercado de tecnologia				</a>
+			</h3>
+	
+			<p class="description">&nbsp;
+</p>		</div>	<div class="module span4">		
+						
+			<a href="https://www.muz.ifsuldeminas.edu.br/noticias/6154-projeto-do-campus-e-finalista-da-23-febrace" class="img-rounded">
+				<img src="/images/Acontece_nos_campi/2025/abril/muzambinho_04.04.25.jpeg" width="230" height="136" alt="Foto no tamanho 230 pixels de largura por 136 pixels de altura" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Muzambinho	</p>
+	
+				
+			<h3 >
+				<a href="https://www.muz.ifsuldeminas.edu.br/noticias/6154-projeto-do-campus-e-finalista-da-23-febrace" >
+					Campus Muzambinho marca presença na 23ª FEBRACE com projeto finalista				</a>
+			</h3>
+	
+			<p class="description">&nbsp;
+</p>		</div>
+</div>	
+					</div>
+				<div class="row-fluid module ">
+									<div class="chamadas-secundarias">
+	<div class="module span4 no-margin">		
+						
+			<a href="https://portal.pas.ifsuldeminas.edu.br/noticias/2449-producao-publicitaria-2" class="img-rounded">
+				<img src="/images/Acontece_nos_campi/2025/abril/passos_04.04.25.jpg" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Passos	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.pas.ifsuldeminas.edu.br/noticias/2449-producao-publicitaria-2" >
+					Produção Publicitária: ex-aluna publica capítulo de livro pelo Intercom				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://pcs.ifsuldeminas.edu.br/noticias/5659" class="img-rounded">
+				<img src="/images/Acontece_nos_campi/2025/abril/poços_04.04.25.jpg" width="230" height="136" alt="" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Poços de Caldas	</p>
+	
+				
+			<h3 >
+				<a href="https://pcs.ifsuldeminas.edu.br/noticias/5659" >
+					Estudantes do campus se destacam na 1ª Copa Pouso Alegre de Powerlifting				</a>
+			</h3>
+	
+		</div>	<div class="module span4">		
+						
+			<a href="https://portal.poa.ifsuldeminas.edu.br/noticias/destaque-nacional" class="img-rounded">
+				<img src="/images/Acontece_nos_campi/2025/abril/pouso_alegre_04.04.25.jpg" width="230" height="136" alt="Portal do Servidor" />
+			</a>
+						
+		
+		<p class="subtitle">
+		Pouso Alegre	</p>
+	
+				
+			<h3 >
+				<a href="https://portal.poa.ifsuldeminas.edu.br/noticias/destaque-nacional" >
+					NAF recebe Certificado Prata e fica com 31ª posição no ranking nacional.				</a>
+			</h3>
+	
+		</div>
+</div>	
+					</div>
+				<div class="row-fluid module ">
+							<div class="outstanding-header">			 	<h2 class="outstanding-title"><span>Acesso rápido</span></h2>
+			 	</div>									<div class="chamadas-secundarias">
+	<div class="module span4 no-margin">		
+						
+			<a href="http://portal.ifsuldeminas.edu.br/pro-reitoria-extensao/relacoes-internacionais" class="img-rounded">
+				<img src="/images/imagens_menu/banner_230x136_intercambio.png" width="230" height="136" alt="Relações Internacionais" />
+			</a>
+						
+		
+	
+	
+		</div>	<div class="module span4">		
+						
+			<a href="http://portal.ifsuldeminas.edu.br/portal-de-publicacoes" class="img-rounded">
+				<img src="/images/imagens_menu/banner_230x136_publicacoes.png" width="230" height="136" alt="Publicações" />
+			</a>
+						
+		
+	
+	
+		</div>	<div class="module span4">		
+						
+			<a href="http://portal.ifsuldeminas.edu.br/pro-reitoria-administracao/compras-e-licitacoes" class="img-rounded">
+				<img src="/images/bannersacessorapido/banner_230x136_licitacao.png" width="230" height="136" alt="Licitações e Contratos" />
+			</a>
+						
+		
+	
+	
+		</div>
+</div>	
+					</div>
+				<div class="row-fluid module ">
+									<div class="chamadas-secundarias">
+	<div class="module span4 no-margin">		
+						
+			<a href="http://portal.ifsuldeminas.edu.br/pro-reitoria-ensino/ead" class="img-rounded">
+				<img src="/images/bannersacessorapido/banner_230x136_ead.png" width="230" height="136" alt="Ensino a Distância" />
+			</a>
+						
+		
+	
+	
+		</div>	<div class="module span4">		
+						
+			<a href="http://portal.ifsuldeminas.edu.br/institucional-geral/1392-portal-do-aluno-2" class="img-rounded">
+				<img src="/images/bannersacessorapido/banner_230x136_aluno.png" width="230" height="136" alt="" />
+			</a>
+						
+		
+	
+	
+		</div>	<div class="module span4">		
+						
+			<a href="http://portal.ifsuldeminas.edu.br/diretoria-de-gestao-de-pessoas" class="img-rounded">
+				<img src="/images/bannersacessorapido/banner_230x136_servidor.png" width="230" height="136" alt="Portal do Servidor" />
+			</a>
+						
+		
+	
+	
+		</div>
+</div>	
+					</div>
+		
+
+                                                          <div id="espaco_inferior" class="row-fluid module">
+			<div id="espaco_inferior_esquerdo" class="span8 module  variacao-module-00">
+ 			
+<div style="border: 0px !important;">
+<div id="djslider-loader370" class="djslider-loader djslider-loader-default" data-animation='{"auto":"1","looponce":"0","transition":"linear","css3transition":"linear","duration":"1000","delay":4000}' data-djslider='{"id":"370","slider_type":"0","slide_size":501,"visible_slides":"3","direction":"left","show_buttons":"0","show_arrows":"1","preload":"800","css3":"1"}' tabindex="0">
+    <div id="djslider370" class="djslider djslider-default" style="height: 335px; width: 1493px; max-width: 1493px !important;">
+        <div id="slider-container370" class="slider-container">
+        	<ul id="slider370" class="djslider-in">
+          		          			<li style="margin: 0 10px 0px 0 !important; height: 335px; width: 491px;">
+          					            											<img class="dj-image" src="/images/matérias_2020/Agosto/videoinstitucional/300x200-video-institucional.png" alt="Assista o vídeo Institucional"  style="width: 100%; height: auto;"/>
+																									<!-- Slide description area: START -->
+						<div class="slide-desc" style="bottom: 0%; left: 0%; width: 100%;">
+						  <div class="slide-desc-in">	
+							<div class="slide-desc-bg slide-desc-bg-default"></div>
+							<div class="slide-desc-text slide-desc-text-default">
+															<div class="slide-title">
+									<a href="https://www.youtube.com/watch?v=jOjK219aiUg" target="_blank" >										Assista o vídeo Institucional									</a>								</div>
+														
+														
+														<div style="clear: both"></div>
+							</div>
+						  </div>
+						</div>
+						<!-- Slide description area: END -->
+												
+						
+					</li>
+                          			<li style="margin: 0 10px 0px 0 !important; height: 335px; width: 491px;">
+          					            											<img class="dj-image" src="/images/banners/Slides/Banner-463x260_instagram.png" alt="Siga o Instagram do IFSULDEMINAS!"  title="Siga o instagram do IFSULDEMINAS!" style="width: 100%; height: auto;"/>
+																									<!-- Slide description area: START -->
+						<div class="slide-desc" style="bottom: 0%; left: 0%; width: 100%;">
+						  <div class="slide-desc-in">	
+							<div class="slide-desc-bg slide-desc-bg-default"></div>
+							<div class="slide-desc-text slide-desc-text-default">
+															<div class="slide-title">
+									<a href="https://www.instagram.com/ifsuldeminas/" target="_blank" >										Siga o Instagram do IFSULDEMINAS!									</a>								</div>
+														
+														
+														<div style="clear: both"></div>
+							</div>
+						  </div>
+						</div>
+						<!-- Slide description area: END -->
+												
+						
+					</li>
+                          			<li style="margin: 0 10px 0px 0 !important; height: 335px; width: 491px;">
+          					            											<img class="dj-image" src="/images/Dj_Image_Slider/tv_ifsuldeminas_nova.jpg" alt="Nossas produções audiovisuais a um clique"  style="width: 100%; height: auto;"/>
+																									<!-- Slide description area: START -->
+						<div class="slide-desc" style="bottom: 0%; left: 0%; width: 100%;">
+						  <div class="slide-desc-in">	
+							<div class="slide-desc-bg slide-desc-bg-default"></div>
+							<div class="slide-desc-text slide-desc-text-default">
+															<div class="slide-title">
+									<a href="https://www.youtube.com/channel/UC73UAcaqQqVwu9m6ZACOaDw" target="_blank" >										Nossas produções audiovisuais a um clique									</a>								</div>
+														
+														
+														<div style="clear: both"></div>
+							</div>
+						  </div>
+						</div>
+						<!-- Slide description area: END -->
+												
+						
+					</li>
+                          			<li style="margin: 0 10px 0px 0 !important; height: 335px; width: 491px;">
+          					            											<img class="dj-image" src="/images/banners/Slides/Banner_Inferior_Rádio.png" alt="Escute a rádio Estação Cultura FM! "  style="width: 100%; height: auto;"/>
+																									<!-- Slide description area: START -->
+						<div class="slide-desc" style="bottom: 0%; left: 0%; width: 100%;">
+						  <div class="slide-desc-in">	
+							<div class="slide-desc-bg slide-desc-bg-default"></div>
+							<div class="slide-desc-text slide-desc-text-default">
+															<div class="slide-title">
+									<a href="https://onlineradiobox.com/br/estacaocultura/?cs=br.estacaocultura" target="_blank" >										Escute a rádio Estação Cultura FM! 									</a>								</div>
+														
+														
+														<div style="clear: both"></div>
+							</div>
+						  </div>
+						</div>
+						<!-- Slide description area: END -->
+												
+						
+					</li>
+                          			<li style="margin: 0 10px 0px 0 !important; height: 335px; width: 491px;">
+          					            											<img class="dj-image" src="/images/Dj_Image_Slider/catalogo_cursos.jpg" alt="Qual dos nossos cursos combina com você?"  style="width: 100%; height: auto;"/>
+																									<!-- Slide description area: START -->
+						<div class="slide-desc" style="bottom: 0%; left: 0%; width: 100%;">
+						  <div class="slide-desc-in">	
+							<div class="slide-desc-bg slide-desc-bg-default"></div>
+							<div class="slide-desc-text slide-desc-text-default">
+															<div class="slide-title">
+									<a href="https://www.youtube.com/playlist?list=PL1IrNiKQOJ7KvBVRt0ERig3VM5S7YaQHT" target="_blank" >										Qual dos nossos cursos combina com você?									</a>								</div>
+														
+														
+														<div style="clear: both"></div>
+							</div>
+						  </div>
+						</div>
+						<!-- Slide description area: END -->
+												
+						
+					</li>
+                          			<li style="margin: 0 10px 0px 0 !important; height: 335px; width: 491px;">
+          					            											<img class="dj-image" src="/images/banners/Slides/banner-federalfm-web.png" alt="Ouça a rádio Federal FM!"  style="width: 100%; height: auto;"/>
+																									<!-- Slide description area: START -->
+						<div class="slide-desc" style="bottom: 0%; left: 0%; width: 100%;">
+						  <div class="slide-desc-in">	
+							<div class="slide-desc-bg slide-desc-bg-default"></div>
+							<div class="slide-desc-text slide-desc-text-default">
+															<div class="slide-title">
+									<a href="https://zeno.fm/radio/federal-fm/" target="_blank" >										Ouça a rádio Federal FM!									</a>								</div>
+														
+														
+														<div style="clear: both"></div>
+							</div>
+						  </div>
+						</div>
+						<!-- Slide description area: END -->
+												
+						
+					</li>
+                          			<li style="margin: 0 10px 0px 0 !important; height: 335px; width: 491px;">
+          					            											<img class="dj-image" src="/images/SLIDE/audio-ifsuldeminas_1.png" alt="IFSULDEMINAS em áudio"  style="width: 100%; height: auto;"/>
+																									<!-- Slide description area: START -->
+						<div class="slide-desc" style="bottom: 0%; left: 0%; width: 100%;">
+						  <div class="slide-desc-in">	
+							<div class="slide-desc-bg slide-desc-bg-default"></div>
+							<div class="slide-desc-text slide-desc-text-default">
+															<div class="slide-title">
+									<a href="https://portal.ifsuldeminas.edu.br/index.php/institucional-geral/2991-ifsuldeminas-em-audio" target="_self" >										IFSULDEMINAS em áudio									</a>								</div>
+														
+														
+														<div style="clear: both"></div>
+							</div>
+						  </div>
+						</div>
+						<!-- Slide description area: END -->
+												
+						
+					</li>
+                          			<li style="margin: 0 10px 0px 0 !important; height: 335px; width: 491px;">
+          					            											<img class="dj-image" src="/images/Dj_Image_Slider/ouvidoria_2.jpg" alt="Saiba utilizar este canal de comunicação"  style="width: 100%; height: auto;"/>
+																									<!-- Slide description area: START -->
+						<div class="slide-desc" style="bottom: 0%; left: 0%; width: 100%;">
+						  <div class="slide-desc-in">	
+							<div class="slide-desc-bg slide-desc-bg-default"></div>
+							<div class="slide-desc-text slide-desc-text-default">
+															<div class="slide-title">
+									<a href="https://www.youtube.com/watch?v=nyv6XDpPZJc&t=23s" target="_blank" >										Saiba utilizar este canal de comunicação									</a>								</div>
+														
+														
+														<div style="clear: both"></div>
+							</div>
+						  </div>
+						</div>
+						<!-- Slide description area: END -->
+												
+						
+					</li>
+                          			<li style="margin: 0 10px 0px 0 !important; height: 335px; width: 491px;">
+          					            											<img class="dj-image" src="/images/SLIDE/Banner463x260_slide_educacao-na-midia.png" alt="Acesse todos os programas já exibidos"  style="width: 100%; height: auto;"/>
+																									<!-- Slide description area: START -->
+						<div class="slide-desc" style="bottom: 0%; left: 0%; width: 100%;">
+						  <div class="slide-desc-in">	
+							<div class="slide-desc-bg slide-desc-bg-default"></div>
+							<div class="slide-desc-text slide-desc-text-default">
+															<div class="slide-title">
+									<a href="https://www.youtube.com/playlist?list=PL1IrNiKQOJ7IBcEML8baNXhzKknVsCoJj" target="_blank" >										Acesse todos os programas já exibidos									</a>								</div>
+														
+														
+														<div style="clear: both"></div>
+							</div>
+						  </div>
+						</div>
+						<!-- Slide description area: END -->
+												
+						
+					</li>
+                        	</ul>
+        </div>
+                <div id="navigation370" class="navigation-container" style="top: 11.940298507463%; margin: 0 0.66979236436705%;">
+        	        	<img id="prev370" class="prev-button showOnHover" src="/modules/mod_djimageslider/themes/default/images/prev.png" alt="Previous" tabindex="0" />
+			<img id="next370" class="next-button showOnHover" src="/modules/mod_djimageslider/themes/default/images/next.png" alt="Next" tabindex="0" />
+						        </div>
+                    </div>
+</div>
+</div>
+<div class="djslider-end" style="clear: both" tabindex="0"></div>
+ 		</div>
+ 	 	 		<div id="espaco_inferior_direito" class="span4 selos module">
+ 			<script type="text/plain" class="cc-onconsent-social">window.addEvent('load', function() { if(document.id('fb-root') == null){
+			console.log("not found"); 
+		var fbroot = new Element('div#fb-root');
+		$$('body').grab(fbroot);
+		(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));}});</script>	<div class="cookiesck-iframe-wrap"><div class="cookiesck-iframe-wrap-text">Ao clicar neste iframe, os cookies serão depositados</div><iframe data-cookiesck-src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FIFSULDEMINAS%2F&amp;width=234&amp;show_faces=true&amp;stream=true&amp;height=340" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:234px; height:340px;" allowtransparency="true"></iframe></div>
+
+ 		</div>
+ 	  </div>
+
+                            <span class="hide">Fim do conteúdo da página</span>
+                        </section>
+                    </div>
+                    <!-- fim #content.span9 -->
+                </div>
+                <!-- fim .row-fluid -->
+            </div>
+            <!-- fim .container -->
+        </main>
+        <footer>
+            <div class="footer-atalhos">
+                <div class="container">
+                    <div class="pull-right voltar-ao-topo"><a href="#portal-siteactions"><i class="icon-chevron-up"></i>&nbsp;Voltar para o topo</a></div>
+                </div>
+            </div>
+            <div class="container container-menus">
+                <div id="footer" class="row footer-menus">
+                    <span class="hide">Início da navegação de rodapé</span>
+                      
+                      <!-- Ajuste para QrCode -->
+                      
+                      <div class="span3">
+						<nav class="row cursos nav">
+							<h2>Consulte o cadastro do IFSULDEMINAS no e-MEC</h2>
+							<ul>
+								<li class="item-140">
+                      				<a href="#">
+                              			<img src="/images/banners/BannerQRCode/rodape_sistema-e-MEC_apenasQRcode.png" alt="e-MEC">
+                                    </a>
+                      			</li>
+                            </ul>
+                        </nav>
+                      </div>
+                      
+                      <!-- FIM Ajuste para QrCode -->
+                      
+                    	
+		<div class="span3">		
+			<nav class="row cursos nav">
+				 			
+				<h2>Acessibilidade</h2>
+								
+<ul>
+<li class="item-140"><a href="/index.php/acessibilidade" >Acessibilidade</a></li><li class="item-141"><a href="#" class="toggle-contraste">Alto contraste</a></li><li class="item-575"><a href="/index.php/mapa-do-site" >Mapa do site</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="span3">		
+			<nav class="row cursos nav">
+				 			
+				<h2>Redes Sociais</h2>
+								
+<ul>
+<li class="item-138"><a href="https://www.facebook.com/IFSULDEMINAS" target="_blank" rel="noopener noreferrer">Facebook</a></li><li class="item-257"><a href="https://www.instagram.com/ifsuldeminas/" >Instagram</a></li><li class="item-137"><a href="https://www.youtube.com/channel/UC73UAcaqQqVwu9m6ZACOaDw" target="_blank" rel="noopener noreferrer">YouTube</a></li><li class="item-136"><a href="https://x.com/ifsuldeminas" target="_blank" rel="noopener noreferrer">Twitter</a></li></ul>
+			</nav>					
+		</div>
+	
+		
+		<div class="span3">		
+			<nav class="row servicos nav">
+				 			
+				<h2>Serviços</h2>
+								
+<ul>
+<li class="item-985"><a href="/index.php/governanca" >Governança</a></li><li class="item-131"><a href="https://accounts.google.com/AccountChooser?hd=ifsuldeminas.edu.br&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;osid=1&amp;service=mail&amp;ss=1&amp;ltmpl=default" target="_blank" rel="noopener noreferrer">Webmail</a></li><li class="item-802"><a href="/index.php/pdi" >PDI</a></li><li class="item-132 parent"><a href="/index.php/contato" >Contato</a></li><li class="item-135"><a href="/index.php/ouvidoria" >Ouvidoria</a></li><li class="item-134"><a href="/index.php/comunicacao" >Comunicação</a></li><li class="item-440"><a href="/index.php/cleber-avila-barbosa-2022-2026" >Agenda do Reitor</a></li><li class="item-442"><a href="https://portal.ifsuldeminas.edu.br/index.php/ultimas-noticias-ifsuldeminas" >Últimas notícias</a></li></ul>
+			</nav>					
+		</div>
+	
+	
+                    <span class="hide">Fim da navegação de rodapé</span>
+                </div>
+                <!-- fim .row -->
+            </div>
+            <!-- fim .container -->
+            <div class="footer-logos">
+                <div class="container">
+                                            <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-left"><img src="/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                                        <a href="#" class="logo-15anosinstituto"><img src="/templates/padraogoverno01/images/15anos_institutos.jpg" alt="Logo 15 anos Institutos"></a>
+                                            <!-- separador para fins de acessibilidade --><span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+                        <a href="http://www.brasil.gov.br/" class="brasil pull-right"><img src="/templates/padraogoverno01/images/logo-brasil-gestao-2023.png" width="150px" alt="Brasil - Governo Federal"></a>
+                                    </div>
+            </div>
+            <div class="footer-ferramenta">
+                <div class="container">
+                    <p>Desenvolvido com o CMS de c&oacute;digo aberto <a href="http://www.joomla.org">Joomla</a></p>                </div>
+            </div>
+            <div class="footer-atalhos visible-phone">
+                <div class="container">
+                    <span class="hide">Fim do conteúdo da página</span>
+                    <div class="pull-right voltar-ao-topo"><a href="#portal-siteactions"><i class="icon-chevron-up"></i>&nbsp;Voltar para o topo</a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- fim div#wrapper -->
+    <!-- scripts principais do template -->
+    		<script src="/templates/padraogoverno01/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	    <script src="/templates/padraogoverno01/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	    <script src="/templates/padraogoverno01/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+		          
+        
+            <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-39220679-1']);
+          _gaq.push(['_trackPageview']);
+                              (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+          
+    <!-- barra vlibras -->
+    <!-- <script defer="defer" src="/templates/padraogoverno01/js/barra_master.js"></script> -->
+	<script async="" src="/templates/padraogoverno01/js/barra_master.js"></script>    
+    <!--<script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script> -->
+	<script async="" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>  
+      
+      
+    <!-- debug -->
+    
+          
+         <script type="text/javascript">
+      var path = "/index.php";
+	  if(path == "vestibular-proen") {
+        var elementDiv = document.querySelectorAll("div.link_css");
+        if(elementDiv[0].children.length <= 2) {
+          var parentEl = elementDiv[0].parentElement;
+          parentEl.parentElement.style.display = "none";
+        }
+      }
+    </script>
+<div id="cookiesck_interface"><div class="cookiesck-main"><div class="cookiesck-main-close">Salvar</div><div class="cookiesck-main-title">Preferências do usuário sobre cookies</div><div class="cookiesck-main-desc">Usamos cookies para garantir que você tenha a melhor experiência em nosso site. Se você recusar o uso de cookies, este site pode não funcionar conforme o esperado.</div><div class="cookiesck-main-buttons"><div class="cookiesck-accept cookiesck_button">Aceitar todos</div><div class="cookiesck-decline cookiesck_button">Recusar todos</div><a class="cookiesck_button" href="/index.php/politica-de-privacidade"  target="" id="cookiesck_readmore">Ler mais</a></div><div class="cookiesck-category" data-category="analytics"><div class="cookiesck-category-name">Analytics</div><div class="cookiesck-category-desc">Ferramentas usadas para analisar os dados para medir a eficácia de um site e entender como ele funciona.</div><div class="cookiesck-platform" data-platform="Google Analytics" ><div class="cookiesck-platform-name">Google Analytics</div><div class="cookiesck-platform-desc"></div><div class="cookiesck-accept cookiesck_button">Aceitar</div><div class="cookiesck-decline cookiesck_button">Recusar</div></div></div><div class="cookiesck-category" data-category="marketing"><div class="cookiesck-category-name">Marketing</div><div class="cookiesck-category-desc">Conjunto de técnicas que têm por objeto a estratégia comercial e em particular o estudo de mercado.</div><div class="cookiesck-platform" data-platform="Google" ><div class="cookiesck-platform-name">Google</div><div class="cookiesck-platform-desc"></div><div class="cookiesck-accept cookiesck_button">Aceitar</div><div class="cookiesck-decline cookiesck_button">Recusar</div></div><div class="cookiesck-platform" data-platform="Facebook" ><div class="cookiesck-platform-name">Facebook</div><div class="cookiesck-platform-desc"></div><div class="cookiesck-accept cookiesck_button">Aceitar</div><div class="cookiesck-decline cookiesck_button">Recusar</div></div></div><div class="cookiesck-category" data-category="polÍtica de privacidade e proteÇÃo de dados pessoais"><div class="cookiesck-category-name">POLÍTICA DE PRIVACIDADE E PROTEÇÃO DE DADOS PESSOAIS</div><div class="cookiesck-category-desc"></div><div class="cookiesck-platform" data-platform="Cookies" ><div class="cookiesck-platform-name">Cookies</div><div class="cookiesck-platform-desc"></div><div class="cookiesck-accept cookiesck_button">Aceitar</div><div class="cookiesck-decline cookiesck_button">Recusar</div></div></div></div></div></body>
+</html>

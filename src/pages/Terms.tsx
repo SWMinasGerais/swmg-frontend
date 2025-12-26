@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 import { BookOpen, Clock, FileTerminal, AlertTriangle, UserCog, Shield, Smartphone, Link, Scale, AlertCircle, CornerRightDown, Gavel } from 'lucide-react';
 
 const TermsPage = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 import { Accessibility, Clock, CheckCircle2, MousePointer, Eye, EyeOff, Headphones, Monitor, Braces, Smartphone, Mail, ArrowUpRight } from 'lucide-react';
 
 const AccessibilityPage = () => {
