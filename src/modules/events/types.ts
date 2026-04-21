@@ -18,6 +18,7 @@ export interface Event {
   totalSlots?: number;
   image?: string;
   url?: string;
+  slug?: string;
   sponsors?: string[];
   imageUrl?: string;
   venue?: string;

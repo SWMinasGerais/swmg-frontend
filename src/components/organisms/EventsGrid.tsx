@@ -139,10 +139,10 @@ const EventsGrid = ({ events, onResetFilters }: EventsGridProps) => {
                           : "bg-amber-500 text-white"
                       )}
                       disabled={event.status !== "active"}
-                      asChild={!!event.url}
+                      asChild={!!(event.slug || event.url)}
                     >
-                      {event.url ? (
-                        <a href={event.url}>
+                      {(event.slug || event.url) ? (
+                        <a href={event.slug ? `/eventos/${event.slug}` : event.url!}>
                           {event.status === "active" ? "Inscrever-se" : "Em breve"}
                           {event.status === "active" && <ExternalLink className="h-4 w-4 ml-2" />}
                         </a>

@@ -106,7 +106,7 @@ const HeroSection = () => {
               status={event.status}
               remainingSlots={event.remainingSlots}
               image={event.imageUrl}
-              url={`/events/${event.id}`}
+              url={`/eventos/${event.id}`}
               featured
             />
           ))}

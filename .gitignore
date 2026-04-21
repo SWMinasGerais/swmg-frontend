@@ -33,3 +33,5 @@ dist-ssr
 # Payload
 payload-types.ts
 generated-schema.graphql
+.playwright-mcp/
+screenshots/

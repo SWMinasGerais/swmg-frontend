@@ -59,7 +59,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
           {align === 'center' && <div className="w-8 h-1 bg-red-600 ml-2"></div>}
         </div>
       )}
-      <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
         {renderTitle()}
       </h2>
       {description && (

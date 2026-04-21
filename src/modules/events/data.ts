@@ -15,6 +15,7 @@ export const events: Event[] = [
     totalSlots: 120,
     image: "/imgs/events/edtech.jpg",
     url: "/events/edtech-future-learning",
+    slug: "startup-weekend-edtech-belo-horizonte-2026",
     sponsors: ["PUC Minas", "SEBRAE", "Google for Startups"]
   },
   {
@@ -30,6 +31,7 @@ export const events: Event[] = [
     totalSlots: 80,
     image: "/imgs/events/healthtech.jpg",
     url: "/events/healthtech-innovation",
+    slug: "startup-weekend-healthtech-belo-horizonte-2026",
     sponsors: ["UFMG", "Hospital das Clínicas", "Bio-Manguinhos"]
   },
   {
@@ -45,6 +47,7 @@ export const events: Event[] = [
     totalSlots: 100,
     image: "/imgs/events/agtech.jpg",
     url: "/events/agro-sustentabilidade",
+    slug: "startup-weekend-agronegocio-uberlandia-2026",
     sponsors: ["UFTM", "Embrapa", "John Deere"]
   },
   {
@@ -59,6 +62,7 @@ export const events: Event[] = [
     totalSlots: 90,
     image: "/imgs/events/fintech.jpg",
     url: "/events/fintech-revolution",
+    slug: "startup-weekend-fintech-belo-horizonte-2026",
     sponsors: ["BDMG", "Banco Inter", "Stone"]
   },
   {
@@ -73,6 +77,7 @@ export const events: Event[] = [
     totalSlots: 80,
     image: "/imgs/events/smartcities.jpg",
     url: "/events/smart-cities",
+    slug: "startup-weekend-smart-cities-vicosa-2026",
     sponsors: ["UFV", "Prefeitura de Viçosa", "Cisco"]
   }
 ]; 

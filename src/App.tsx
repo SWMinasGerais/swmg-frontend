@@ -13,6 +13,7 @@ import Security from "./pages/Security";
 import Cookies from "./pages/Cookies";
 import Accessibility from "./pages/Accessibility";
 import { PayloadData } from "@/components/PayloadData";
+import EventDetails from "./pages/EventDetails";
 import { usePartnerRedirect } from "./hooks/usePartnerRedirect";
 
 const queryClient = new QueryClient();
@@ -51,6 +52,10 @@ const App = () => (
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/acessibilidade" element={<Accessibility />} />
           
+          {/* Rotas de eventos */}
+          <Route path="/eventos/:slug" element={<EventDetails />} />
+          <Route path="/events/:id" element={<EventDetails />} />
+
           {/* Nova rota para redirecionamento de parceiros */}
           <Route path="/:partnerId" element={<PartnerRedirect />} />
           

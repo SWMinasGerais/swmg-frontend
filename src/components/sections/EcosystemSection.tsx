@@ -229,9 +229,9 @@ const EcosystemSection = () => {
               <div className="absolute inset-0 bg-[url('/imgs/mg-map-outline.png')] bg-contain bg-center bg-no-repeat opacity-20"></div>
               
               <div className="text-center px-6">
-                <p className="text-gray-500 mb-4">
-                  Aqui seria integrado um mapa interativo mostrando todos os atores 
-                  do ecossistema em suas respectivas localizações. 
+                <p className="text-gray-500 mb-4 flex flex-col items-center gap-2">
+                  <MapPin className="h-5 w-5 text-swmg-primary" />
+                  Em breve: mapa interativo com todos os atores do ecossistema mineiro de inovação.
                 </p>
                 
                 {/* Placeholder for map markers */}
