@@ -51,19 +51,19 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
     )}>
       {eyebrow && (
         <div className={cn(
-          'mb-3',
-          align === 'center' ? 'flex items-center justify-center gap-2' : 'flex items-center gap-2'
+          'mb-4',
+          align === 'center' ? 'flex items-center justify-center gap-3' : 'flex items-center gap-3'
         )}>
-          <div className="w-8 h-0.5 bg-red-600 rounded-full"></div>
-          <span className="text-sm font-semibold text-red-600 uppercase tracking-wider">{eyebrow}</span>
-          {align === 'center' && <div className="w-8 h-0.5 bg-red-600 rounded-full"></div>}
+          <div className="w-8 h-[2px] bg-[#E4002B]"></div>
+          <span className="text-xs font-semibold text-[#E4002B] uppercase tracking-[0.15em]">{eyebrow}</span>
+          {align === 'center' && <div className="w-8 h-[2px] bg-[#E4002B]"></div>}
         </div>
       )}
-      <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3 tracking-tight leading-tight">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#111] mb-3 tracking-[-0.02em] leading-[1.15]">
         {renderTitle()}
       </h2>
       {description && (
-        <p className="text-slate-500 leading-relaxed">
+        <p className="text-neutral-500 leading-relaxed text-[15px]">
           {description}
         </p>
       )}

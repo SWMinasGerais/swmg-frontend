@@ -54,33 +54,30 @@ const HeroSection = () => {
       spacing="lg"
       className="pt-24 pb-10 md:pt-28 md:pb-14"
     >
-      {/* Hero content — centered */}
-      <div className="max-w-3xl mx-auto text-center animate-fade-in">
-        <LiveBadge className="mb-6">O Maior Evento de Empreendedorismo de MG</LiveBadge>
+      {/* Hero content */}
+      <div className="max-w-4xl mx-auto text-center">
+        <LiveBadge className="mb-8">O Maior Evento de Empreendedorismo de MG</LiveBadge>
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#111] mb-6 leading-[1.05] tracking-[-0.03em]">
           Transformando ideias em{' '}
-          <span className="text-red-600 relative inline-block">
-            startups
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-red-600/30 rounded-full"></span>
-          </span>{' '}
+          <span className="text-editorial text-red-600">startups</span>{' '}
           em 54h
         </h1>
-        <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-neutral-500 mb-10 leading-relaxed max-w-2xl mx-auto">
           Nós somos Minas, nós somos Startup Weekend. O Circuito Mineiro reúne empreendedores, designers e desenvolvedores para criar o futuro da inovação em nosso estado.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
-          <Button size="lg" className="bg-red-600 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20 text-white px-8 py-6 text-lg font-semibold rounded-xl">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+          <Button size="lg" className="bg-[#E4002B] hover:bg-[#c70025] text-white px-8 py-6 text-base font-semibold rounded-full shadow-[0_4px_20px_rgba(228,0,43,0.25)] hover:shadow-[0_8px_30px_rgba(228,0,43,0.35)] transition-all">
             Inscreva-se agora
           </Button>
-          <Button variant="outline" size="lg" className="border-slate-300 text-slate-700 hover:border-red-300 hover:text-red-600 px-8 py-6 text-lg rounded-xl group">
+          <Button variant="outline" size="lg" className="border-neutral-300 text-neutral-700 hover:border-[#E4002B] hover:text-[#E4002B] px-8 py-6 text-base rounded-full group transition-all">
             Veja cases
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
 
         {/* Stats bar */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-slate-200">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 pt-8 border-t border-neutral-200/60">
           <StatCard value={5000} prefix="+" label="Participantes" />
           <StatCard value={40} suffix="+" label="Startups criadas" />
           <StatCard value={128} suffix="+" label="Eventos realizados" />

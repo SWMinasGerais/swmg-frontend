@@ -17,10 +17,10 @@ const StatCard = ({
   className?: string;
 }) => (
   <div className={cn('text-center', className)}>
-    <div className="text-2xl md:text-3xl font-bold text-slate-900">
+    <div className="text-2xl md:text-3xl font-bold text-[#111] tracking-tight">
       <CountUp end={value} prefix={prefix} suffix={suffix} />
     </div>
-    <div className="text-sm text-slate-500 mt-1">{label}</div>
+    <div className="text-xs text-neutral-400 mt-1 uppercase tracking-wider font-medium">{label}</div>
   </div>
 );
 

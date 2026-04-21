@@ -143,8 +143,8 @@ export default {
         'shine': 'shine 2s linear infinite'
       },
       fontFamily: {
-        sans: ['Open Sans', 'sans-serif'],
-        heading: ['Montserrat', 'sans-serif']
+        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+        accent: ['"Instrument Serif"', 'Georgia', 'serif']
       }
     }
   },
