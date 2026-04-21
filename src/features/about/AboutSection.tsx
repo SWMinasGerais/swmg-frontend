@@ -6,7 +6,7 @@ import {
   AccordionItem, 
   AccordionTrigger 
 } from "@/components/ui/accordion";
-import { startupEcosystemData } from "@/features/about/data";
+import { startupEcosystemData } from "./timelineData";
 import { TimelineEvent } from "@/types/timeline";
 import { useState, useEffect, useRef } from "react";
 

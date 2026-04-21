@@ -14,6 +14,9 @@ import Cookies from "./pages/Cookies";
 import Accessibility from "./pages/Accessibility";
 import { PayloadData } from "@/components/PayloadData";
 import EventDetails from "./pages/EventDetails";
+import Apply from "./pages/Apply";
+import MatchmakingPage from "./features/matchmaking/MatchmakingPage";
+import Ecossistema from "./pages/ecossistema";
 import { usePartnerRedirect } from "./hooks/usePartnerRedirect";
 
 const queryClient = new QueryClient();
@@ -51,7 +54,10 @@ const App = () => (
           <Route path="/seguranca" element={<Security />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/acessibilidade" element={<Accessibility />} />
-          
+          <Route path="/inscricao" element={<Apply />} />
+          <Route path="/matchmaking" element={<MatchmakingPage />} />
+          <Route path="/ecossistema" element={<Ecossistema />} />
+
           {/* Rotas de eventos */}
           <Route path="/eventos/:slug" element={<EventDetails />} />
           <Route path="/events/:id" element={<EventDetails />} />
