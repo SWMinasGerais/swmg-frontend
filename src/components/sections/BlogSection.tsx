@@ -8,9 +8,9 @@ import NewsletterSignup from "@/components/molecules/NewsletterSignup";
 
 const BlogSection = () => {
   return (
-    <section id="blog" className="py-20">
+    <section id="blog" className="py-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-8">
           <SectionTitle 
             eyebrow="Blog & Notícias" 
             title="Dicas e histórias de sucesso"
@@ -34,7 +34,7 @@ const BlogSection = () => {
         <BlogPostsGrid posts={blogPosts} categoryConfig={categoryConfig} />
 
         {/* Newsletter subscription */}
-        <div className="mt-16">
+        <div className="mt-10">
           <NewsletterSignup />
         </div>
       </div>

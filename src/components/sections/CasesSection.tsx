@@ -47,10 +47,10 @@ const CasesSection = () => {
       {/* Stats section below startups grid */}
       <StatsGrid 
         stats={startupStatsData} 
-        className="mt-16 mb-4"
+        className="mt-10 mb-4"
       />
       
-      <div className="text-center mt-12">
+      <div className="text-center mt-8">
         <Button asChild variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white">
           <Link to="/cases">
             Ver todos os casos

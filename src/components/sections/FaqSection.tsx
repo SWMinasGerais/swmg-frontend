@@ -32,7 +32,7 @@ const FaqSection = () => {
   }));
 
   return (
-    <section id="faq" className="py-24 relative overflow-hidden">
+    <section id="faq" className="py-14 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <SectionTitle 
           eyebrow="Perguntas Frequentes"
@@ -102,7 +102,7 @@ const FaqSection = () => {
           )}
 
           {/* Contact CTA */}
-          <div className="mt-16 p-8 bg-white/80 backdrop-blur-sm rounded-xl shadow-md border border-slate-100/50">
+          <div className="mt-10 p-8 bg-white/80 backdrop-blur-sm rounded-xl shadow-md border border-slate-100/50">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">

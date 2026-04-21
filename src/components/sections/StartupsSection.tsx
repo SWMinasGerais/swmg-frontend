@@ -1,6 +1,7 @@
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import CountUp from '@/components/atoms/CountUp';
 
 const startups = [
   {
@@ -51,9 +52,9 @@ const startups = [
 
 const StartupsSection: React.FC = () => {
   return (
-    <section id="startups" className="py-24 relative overflow-hidden">
+    <section id="startups" className="py-14 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <Badge className="bg-red-600/10 text-red-600 hover:bg-red-600/20 mb-4">
             Casos de Sucesso
           </Badge>
@@ -65,7 +66,7 @@ const StartupsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-8">
           {startups.map(startup => (
             <Card key={startup.id} className="group overflow-hidden transition-all duration-300 hover:shadow-xl animate-slide-up border-0 shadow-lg hover:-translate-y-1 bg-white/80 backdrop-blur-sm">
               <div className={`h-3 bg-gradient-to-r ${startup.color}`}></div>
@@ -130,7 +131,7 @@ const StartupsSection: React.FC = () => {
                   <div className="w-20 h-20 rounded-2xl bg-white/90 backdrop-blur-sm shadow-lg flex items-center justify-center mb-2 border border-slate-100/50">
                     <span className="text-red-600 font-bold text-xl">{year}</span>
                   </div>
-                  <span className="text-sm font-medium text-slate-600">{parseInt(year) - 2017} startups</span>
+                  <span className="text-sm font-medium text-slate-600"><CountUp end={parseInt(year) - 2017} suffix=" startups" /></span>
                 </div>
               ))}
             </div>

@@ -321,7 +321,7 @@ const AboutSection = () => {
 
   // Render references
   const renderReferences = () => (
-    <div className="mt-12 bg-white/90 backdrop-blur-lg p-6 rounded-xl shadow-md border border-slate-100/50 max-w-3xl mx-auto animate-fadeIn" style={{ animationDelay: '300ms' }}>
+    <div className="mt-8 bg-white/90 backdrop-blur-lg p-6 rounded-xl shadow-md border border-slate-100/50 max-w-3xl mx-auto animate-fadeIn" style={{ animationDelay: '300ms' }}>
       <h4 className="text-lg font-bold text-slate-900 mb-4 flex items-center">
         <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-3">
           <BookOpen className="h-4 w-4 text-red-600" />
@@ -346,7 +346,7 @@ const AboutSection = () => {
   );
 
   return (
-    <section id="sobre" className="py-20 bg-gradient-to-b from-white to-slate-50/50">
+    <section id="sobre" className="py-12 bg-gradient-to-b from-white to-slate-50/50">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Left column - Vision, Mission, Values */}

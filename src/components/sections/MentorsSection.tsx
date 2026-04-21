@@ -163,7 +163,7 @@ const MentorsSection = () => {
         )}
 
         {/* CTA */}
-        <div className="mt-16 bg-gradient-to-r from-red-600/90 to-red-700/90 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden">
+        <div className="mt-10 bg-gradient-to-r from-red-600/90 to-red-700/90 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-8">
             <div>
               <h3 className="text-xl font-bold text-white mb-2">Quer se tornar um mentor?</h3>

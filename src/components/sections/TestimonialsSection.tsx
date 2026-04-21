@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
       <TestimonialsCarousel testimonials={testimonials} />
       
       {/* CTA */}
-      <div className="mt-16 text-center">
+      <div className="mt-10 text-center">
         <Button className="bg-white hover:bg-slate-50 text-red-600">
           Compartilhar sua experiência
         </Button>

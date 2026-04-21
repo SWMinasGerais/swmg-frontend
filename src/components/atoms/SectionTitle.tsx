@@ -45,7 +45,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 
   return (
     <div className={cn(
-      'mb-12 max-w-3xl',
+      'mb-8 max-w-3xl',
       getAlignment(),
       className
     )}>

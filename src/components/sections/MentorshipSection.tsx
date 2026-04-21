@@ -75,9 +75,9 @@ const MentorshipSection = () => {
     : mentors;
 
   return (
-    <section id="mentoria" className="py-24 relative overflow-hidden">
+    <section id="mentoria" className="py-14 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center justify-center mb-3">
             <div className="w-8 h-1 bg-red-600 mr-2"></div>
             <h5 className="font-medium text-slate-900">Programa de Mentoria</h5>
@@ -91,7 +91,7 @@ const MentorshipSection = () => {
         </div>
 
         {/* Program benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-slate-100/50 hover:shadow-md transition-all duration-300">
             <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
               <Clock className="text-red-600 h-6 w-6" />
@@ -216,7 +216,7 @@ const MentorshipSection = () => {
         </div>
         
         {/* Program info */}
-        <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-md overflow-hidden mt-16">
+        <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-md overflow-hidden mt-10">
           <div className="grid grid-cols-1 md:grid-cols-5">
             <div className="md:col-span-3 p-8">
               <div className="inline-flex items-center text-sm text-red-600 font-medium mb-4 bg-red-50 px-3 py-1 rounded-full">

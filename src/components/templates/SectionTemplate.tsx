@@ -28,10 +28,10 @@ const SectionTemplate: React.FC<SectionTemplateProps> = ({
   };
 
   const spacingClasses = {
-    sm: 'py-12',
-    md: 'py-16',
-    lg: 'py-24',
-    xl: 'py-32'
+    sm: 'py-8',
+    md: 'py-12',
+    lg: 'py-16',
+    xl: 'py-20'
   };
 
   return (

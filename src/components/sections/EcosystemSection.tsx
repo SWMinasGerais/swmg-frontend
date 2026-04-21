@@ -91,9 +91,9 @@ const EcosystemSection = () => {
   // Loading skeleton for ecosystem map
   if (isLoading) {
     return (
-      <section id="ecossistema" className="py-20">
+      <section id="ecossistema" className="py-12">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <Skeleton className="h-4 w-32 mx-auto mb-3" />
             <Skeleton className="h-10 w-64 mx-auto mb-4" />
             <Skeleton className="h-16 w-full max-w-2xl mx-auto" />
@@ -119,7 +119,7 @@ const EcosystemSection = () => {
             </div>
           </div>
 
-          <div className="mt-12 text-center">
+          <div className="mt-8 text-center">
             <Skeleton className="h-10 w-48 mx-auto" />
           </div>
         </div>
@@ -130,7 +130,7 @@ const EcosystemSection = () => {
   // Error state
   if (isError) {
     return (
-      <section id="ecossistema" className="py-20">
+      <section id="ecossistema" className="py-12">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-swmg-dark mb-4">
@@ -152,7 +152,7 @@ const EcosystemSection = () => {
   }
 
   return (
-    <section id="ecossistema" className="py-20">
+    <section id="ecossistema" className="py-12">
       <div className="container mx-auto px-4">
         <SectionTitle 
           eyebrow="Ecossistema"
@@ -317,7 +317,7 @@ const EcosystemSection = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <a href="/ecossistema">
             <Button className="bg-swmg-primary hover:bg-swmg-dark text-white group">
               Ver diretório completo

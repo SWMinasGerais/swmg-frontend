@@ -52,7 +52,7 @@ const HeroSection = () => {
   return (
     <SectionTemplate
       spacing="lg"
-      className="pt-28 pb-16 md:pt-32 md:pb-20"
+      className="pt-24 pb-10 md:pt-28 md:pb-14"
     >
       {/* Hero content — centered */}
       <div className="max-w-3xl mx-auto text-center animate-fade-in">
@@ -69,7 +69,7 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
           Nós somos Minas, nós somos Startup Weekend. O Circuito Mineiro reúne empreendedores, designers e desenvolvedores para criar o futuro da inovação em nosso estado.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
+        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
           <Button size="lg" className="bg-red-600 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20 text-white px-8 py-6 text-lg font-semibold rounded-xl">
             Inscreva-se agora
           </Button>
@@ -89,7 +89,7 @@ const HeroSection = () => {
       </div>
 
       {/* Próximos Eventos — 3 colunas abaixo */}
-      <div className="mt-16">
+      <div className="mt-10">
         <SectionTitle
           title="Próximos Eventos"
           eyebrow="Participe"
