@@ -104,12 +104,12 @@ const AboutSection = () => {
     return (
       <div 
         key={index} 
-        className={`mb-6 max-w-3xl mx-auto transform transition-all duration-500 ${
+        className={`mb-4 max-w-3xl mx-auto transform transition-all duration-500 ${
           isActive ? "scale-100" : "scale-[0.98]"
         }`}
       >
         <div 
-          className={` p-5 rounded-xl shadow-md border ${
+          className={`p-4 rounded-xl shadow-sm border ${
             isActive ? "border-red-200 shadow-lg" : "border-slate-100"
           } transition-all duration-300 hover:shadow-lg`}
         >
@@ -122,23 +122,23 @@ const AboutSection = () => {
           >
             <AccordionItem value={periodValue} className="border-none">
               <AccordionTrigger 
-                className={`group py-4 px-4 rounded-xl text-xl font-bold text-slate-900 transition-all duration-300 ${
+                className={`group py-3 px-3 rounded-xl text-lg font-bold text-slate-900 transition-all duration-300 ${
                   isActive ? "bg-gradient-to-r from-red-50 to-white shadow-sm" : "hover:bg-slate-50/80"
                 }`}
               >
                 <div className="flex items-center w-full">
                   <div className="relative flex-shrink-0 transition-all duration-300">
-                    <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white overflow-hidden 
+                    <div className={`w-14 h-14 rounded-xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white overflow-hidden 
                       ${isActive ? "shadow-lg" : "shadow-md group-hover:shadow-lg"} 
                       transform transition-all duration-300 
                       ${isActive ? "scale-105 translate-y-0" : "group-hover:scale-[1.02] group-hover:-translate-y-1"}`}>
                       <span className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       <div className="flex flex-col items-center">
-                        <span className="font-bold text-lg relative z-10 mb-0.5">
+                        <span className="font-bold text-sm relative z-10 mb-0.5">
                           {periodData.period.split("-")[0]}
                         </span>
-                        <div className="h-px w-12 bg-white/30"></div>
-                        <span className="font-bold text-lg relative z-10 mt-0.5">
+                        <div className="h-px w-8 bg-white/30"></div>
+                        <span className="font-bold text-sm relative z-10 mt-0.5">
                           {periodData.period.split("-")[1] || periodData.period.split("-")[0]}
                         </span>
                       </div>
@@ -149,7 +149,7 @@ const AboutSection = () => {
                       </div>
                     )}
                   </div>
-                  <div className="flex flex-col ml-5 text-left flex-grow">
+                  <div className="flex flex-col ml-4 text-left flex-grow">
                     <div className="flex items-center justify-between w-full">
                       <h3 className={`font-bold text-lg transition-all duration-300 ${isActive ? "text-red-700" : "text-slate-900 group-hover:text-red-600"}`}>
                         {periodData.title}
@@ -175,7 +175,7 @@ const AboutSection = () => {
               </AccordionTrigger>
               <AccordionContent>
                 {/* Search bar */}
-                <div className="px-4 py-3 mb-4 mt-2">
+                <div className="px-3 py-2 mb-3 mt-1">
                   <div className="relative">
                     <input
                       type="text"
@@ -199,7 +199,7 @@ const AboutSection = () => {
                 </div>
 
                 {/* Year quick navigation */}
-                <div className="px-4 mb-4 flex flex-wrap gap-1.5">
+                <div className="px-3 mb-3 flex flex-wrap gap-1.5">
                   {years.map((yearData, yearIndex) => (
                     <button
                       key={yearIndex}
@@ -218,7 +218,7 @@ const AboutSection = () => {
                 {/* Timeline content with virtualization */}
                 <div 
                   ref={yearsRef}
-                  className="pl-10 space-y-4 mt-2 max-h-[60vh] overflow-y-auto pr-4 custom-scrollbar"
+                  className="pl-8 space-y-3 mt-1 max-h-[50vh] overflow-y-auto pr-3 custom-scrollbar"
                 >
                   {years.slice(0, visibleYearsCount).map((yearData, yearIndex) => {
                     const filteredEvents = filterEvents(yearData.events);
@@ -236,9 +236,9 @@ const AboutSection = () => {
                         style={{ animationDelay: `${yearIndex * 100}ms` }}
                       >
                         <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-red-600/30 ml-4"></div>
-                        <div className="mb-6">
+                        <div className="mb-4">
                           <div className="flex flex-col">
-                            <div className="flex items-start mb-3">
+                            <div className="flex items-start mb-2">
                               <div className="relative">
                                 <div 
                                   className={`w-12 h-12 rounded-xl flex items-center justify-center bg-white border-2 ${
@@ -262,8 +262,8 @@ const AboutSection = () => {
                               </div>
                             </div>
                             
-                            <div className="ml-12 bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-slate-100/50 transition-all duration-300 hover:shadow-md">
-                              <ul className="space-y-5 text-sm">
+                            <div className="ml-12 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-sm border border-slate-100/50 transition-all duration-300 hover:shadow-md">
+                              <ul className="space-y-3 text-sm">
                                 {filteredEvents.map((event: TimelineEvent, eventIndex) => (
                                   <li 
                                     key={eventIndex} 
@@ -321,7 +321,7 @@ const AboutSection = () => {
 
   // Render references
   const renderReferences = () => (
-    <div className="mt-8 bg-white/90 backdrop-blur-lg p-6 rounded-xl shadow-md border border-slate-100/50 max-w-3xl mx-auto animate-fadeIn" style={{ animationDelay: '300ms' }}>
+    <div className="mt-6 bg-white/90 backdrop-blur-lg p-4 rounded-xl shadow-sm border border-slate-100/50 max-w-3xl mx-auto animate-fadeIn" style={{ animationDelay: '300ms' }}>
       <h4 className="text-lg font-bold text-slate-900 mb-4 flex items-center">
         <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-3">
           <BookOpen className="h-4 w-4 text-red-600" />
@@ -348,7 +348,7 @@ const AboutSection = () => {
   return (
     <section id="sobre" className="py-16" style={{ backgroundColor: '#FAF9F6' }}>
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="flex flex-col lg:flex-row gap-16 items-start">
+        <div className="flex flex-col lg:flex-row gap-10 items-start">
           {/* Left column - Vision, Mission, Values */}
           <div className="animate-fadeIn lg:w-2/5 lg:sticky lg:top-20 self-start">
             <div className="flex items-center gap-3 mb-4">
@@ -424,7 +424,7 @@ const AboutSection = () => {
                 <div className="w-10 h-1.5 bg-gradient-to-r from-red-600 to-red-400 mr-3 rounded-full"></div>
                 Ecossistema de Startups em Minas Gerais
               </h3>
-              <p className="text-slate-700 mb-8 leading-relaxed text-lg max-w-2xl">
+              <p className="text-slate-700 mb-6 leading-relaxed text-base max-w-2xl">
                 Conheça a evolução do ecossistema mineiro de startups, desde suas origens
                 acadêmicas até se tornar um dos principais polos de inovação do país.
                 <span className="text-red-600 font-medium"> Clique em cada período para explorar sua história.</span>

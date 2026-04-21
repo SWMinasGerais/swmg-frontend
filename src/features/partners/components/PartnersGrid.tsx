@@ -118,10 +118,10 @@ const PartnersGrid: React.FC<PartnersGridProps> = ({
                   'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'
                 )
             )}>
-                {partners.map(partner => (
+                {partners.map((partner, idx) => (
                   gridType === 'logos' ? (
                 <PartnerLogo
-                      key={partner.id || Math.random().toString()}
+                      key={`${partner.id}-${idx}`}
                   name={partner.name}
                   logo={partner.logo}
                   website={partner.website}
@@ -134,7 +134,7 @@ const PartnersGrid: React.FC<PartnersGridProps> = ({
                 />
                   ) : (
                     <PartnerCard
-                      key={partner.id || partner.dbId || Math.random().toString()}
+                      key={`${partner.id}-card-${idx}`}
                       partner={partner}
                       highlight={tier === 'diamond' || tier === 'platinum'}
                       dbId={partner.dbId}
@@ -152,10 +152,10 @@ const PartnersGrid: React.FC<PartnersGridProps> = ({
 
   return (
     <div className={`grid ${columnsClass[columns]} gap-4 md:gap-6 ${className}`}>
-      {filteredPartners.map(partner => (
+      {filteredPartners.map((partner, idx) => (
         gridType === 'logos' ? (
         <PartnerLogo
-            key={partner.id || Math.random().toString()}
+            key={`${partner.id}-f-${idx}`}
           name={partner.name}
           logo={partner.logo}
           website={partner.website}
@@ -164,7 +164,7 @@ const PartnersGrid: React.FC<PartnersGridProps> = ({
         />
         ) : (
           <PartnerCard
-            key={partner.id || partner.dbId || Math.random().toString()}
+            key={`${partner.id}-fc-${idx}`}
             partner={partner}
             highlight={partner.tier === 'diamond' || partner.tier === 'platinum'}
             dbId={partner.dbId}
