@@ -5,7 +5,7 @@ export const events: Event[] = [
   {
     id: 1,
     title: "EdTech & Future of Learning",
-    date: "15-17 Outubro, 2023",
+    date: "15-17 Outubro, 2026",
     location: "PUC Minas",
     city: "Belo Horizonte",
     theme: "EdTech",
@@ -20,7 +20,7 @@ export const events: Event[] = [
   {
     id: 2,
     title: "HealthTech Innovation",
-    date: "05-07 Novembro, 2023",
+    date: "05-07 Novembro, 2026",
     location: "Laboratórios UFMG",
     city: "Belo Horizonte",
     theme: "HealthTech",
@@ -35,7 +35,7 @@ export const events: Event[] = [
   {
     id: 3,
     title: "Agronegócio & Sustentabilidade",
-    date: "10-12 Dezembro, 2023",
+    date: "10-12 Dezembro, 2026",
     location: "UFTM",
     city: "Uberlândia",
     theme: "AgTech",
@@ -50,7 +50,7 @@ export const events: Event[] = [
   {
     id: 4,
     title: "FinTech Revolution",
-    date: "25-27 Agosto, 2023",
+    date: "25-27 Agosto, 2026",
     location: "BDMG",
     city: "Belo Horizonte",
     theme: "FinTech",
@@ -64,7 +64,7 @@ export const events: Event[] = [
   {
     id: 5,
     title: "Smart Cities",
-    date: "14-16 Julho, 2023",
+    date: "14-16 Julho, 2026",
     location: "Parque Tecnológico",
     city: "Viçosa",
     theme: "SmartCities",

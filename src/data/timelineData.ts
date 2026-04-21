@@ -3,9 +3,18 @@ import { TimelineData } from "@/types/timeline";
 export const startupEcosystemData: TimelineData = {
   periods: [
     {
-      period: "2022-2025",
+      period: "2022-2026",
       title: "Maturidade Tecnológica e Projeção Internacional",
       years: [
+        {
+          year: "2026",
+          events: [
+            {
+              text: "O Circuito Mineiro de Startup Weekend atinge a marca de 150 eventos realizados, com expansão para novas cidades do interior de Minas Gerais."
+            }
+          ],
+          highlights: "Circuito Mineiro atinge 150+ eventos realizados"
+        },
         {
           year: "2025",
           events: [

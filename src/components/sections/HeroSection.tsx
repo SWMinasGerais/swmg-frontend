@@ -1,17 +1,17 @@
 import React from 'react';
-import { Button } from "@/components/ui/button";
-import { ArrowRight, CalendarDays, MapPin, Users } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import SectionTemplate from '@/components/templates/SectionTemplate';
 import EventCard from '@/components/molecules/EventCard';
 import SectionTitle from '@/components/atoms/SectionTitle';
 import { Event } from '@/modules/events/types';
+import { CountUp, LiveBadge, SWButton, StatCard } from '@/design-system';
 
 // Sample upcoming events data
 const upcomingEvents: Event[] = [
   {
     id: 1,
     title: "EdTech & Future of Learning",
-    date: "15-17 Outubro, 2023",
+    date: "18-20 Outubro, 2026",
     location: "Hub Mineiro de Inovação",
     city: "Belo Horizonte",
     theme: "EdTech",
@@ -23,7 +23,7 @@ const upcomingEvents: Event[] = [
   {
     id: 2,
     title: "HealthTech Innovation",
-    date: "12-14 Novembro, 2023",
+    date: "8-10 Novembro, 2026",
     location: "Campus UFMG",
     city: "Belo Horizonte",
     theme: "HealthTech",
@@ -35,7 +35,7 @@ const upcomingEvents: Event[] = [
   {
     id: 3,
     title: "FinTech Revolution",
-    date: "08-10 Dezembro, 2023",
+    date: "6-8 Dezembro, 2026",
     location: "FIEMG Lab",
     city: "Belo Horizonte",
     theme: "FinTech",
@@ -54,24 +54,30 @@ const HeroSection = () => {
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Transformando ideias em <span className="text-red-600">startups</span> em 54h
+          <LiveBadge className="mb-6">O Maior Evento de Empreendedorismo de MG</LiveBadge>
+
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+            Transformando ideias em <span className="text-red-600 relative">startups<span className="absolute bottom-0 left-0 w-full h-1 bg-red-600/30 rounded-full"></span></span> em 54h
           </h1>
-          <p className="text-lg md:text-xl text-slate-700 mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-xl">
             Nós somos Minas, nós somos Startup Weekend. O Circuito Mineiro reúne empreendedores, designers e desenvolvedores para criar o futuro da inovação em nosso estado.
           </p>
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
-            <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg font-medium">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
+            <SWButton variant="primary" size="lg">
               Inscreva-se agora
-            </Button>
-            <Button variant="outline" className="border-red-600 text-red-600 hover:bg-red-50 px-8 py-6 text-lg group">
+            </SWButton>
+            <SWButton variant="outline" size="lg" className="group">
               Veja cases
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            </SWButton>
           </div>
-          <div className="flex items-center text-sm text-slate-500">
-            <div className="w-12 h-1 bg-red-600 mr-3"></div>
-            <span>Participe dos próximos eventos!</span>
+
+          {/* Stats bar */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-slate-200">
+            <StatCard value={5000} prefix="+" label="Participantes" />
+            <StatCard value={40} suffix="+" label="Startups criadas" />
+            <StatCard value={128} suffix="+" label="Eventos realizados" />
+            <StatCard value={28} prefix="R$ " suffix="M" label="Investimento captado" />
           </div>
         </div>
         

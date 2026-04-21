@@ -6,8 +6,8 @@ const startups = [
   {
     id: 1,
     name: "GreenMinas",
-    description: "Plataforma de soluções sustentáveis para agronegócio que nasceu no Startup Weekend BH 2023.",
-    year: "2023",
+    description: "Plataforma de soluções sustentáveis para agronegócio que nasceu no Startup Weekend BH 2025.",
+    year: "2025",
     city: "Belo Horizonte",
     category: "AgTech",
     funding: "R$ 1.2M",
@@ -57,7 +57,7 @@ const StartupsSection: React.FC = () => {
           <Badge className="bg-red-600/10 text-red-600 hover:bg-red-600/20 mb-4">
             Casos de Sucesso
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
             Startups nascidas no Startup Weekend
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
@@ -125,7 +125,7 @@ const StartupsSection: React.FC = () => {
               </p>
             </div>
             <div className="flex gap-6">
-              {["2021", "2022", "2023", "2024"].map(year => (
+              {["2023", "2024", "2025", "2026"].map(year => (
                 <div key={year} className="text-center transform transition-all duration-300 hover:scale-105">
                   <div className="w-20 h-20 rounded-2xl bg-white/90 backdrop-blur-sm shadow-lg flex items-center justify-center mb-2 border border-slate-100/50">
                     <span className="text-red-600 font-bold text-xl">{year}</span>

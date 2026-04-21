@@ -22,7 +22,7 @@ const BlogSection = () => {
               variant="outline" 
               className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white group"
             >
-              <Link to="/blog">
+              <Link to="/blog" className="hover:underline">
                 Ver todos os artigos
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
