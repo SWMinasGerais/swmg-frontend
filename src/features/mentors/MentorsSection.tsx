@@ -151,23 +151,23 @@ const MentorsSection = () => {
       {/* Pagination - Simple version */}
       {filteredMentors.length > pageSize && !isLoading && !isError && (
               <div className="flex justify-center mt-10">
-                <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-xl border border-neutral-100 p-1">
+                <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-xl border border-slate-100/50 p-1">
                   <Button 
                     variant="ghost" 
-                    className="text-neutral-500 hover:text-[#E4002B] hover:bg-red-50"
+                    className="text-slate-700 hover:text-red-600 hover:bg-red-50"
                     onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                     disabled={currentPage === 1}
                   >
                     Anterior
                   </Button>
                   
-                  <div className="px-4 py-2 text-sm font-medium text-neutral-500">
+                  <div className="px-4 py-2 text-sm font-medium text-slate-700">
               Página {currentPage} de {Math.ceil(filteredMentors.length / pageSize)}
                   </div>
                   
                   <Button 
                     variant="ghost" 
-                    className="text-neutral-500 hover:text-[#E4002B] hover:bg-red-50"
+                    className="text-slate-700 hover:text-red-600 hover:bg-red-50"
               onClick={() => setCurrentPage(prev => Math.min(Math.ceil(filteredMentors.length / pageSize), prev + 1))}
               disabled={currentPage >= Math.ceil(filteredMentors.length / pageSize)}
                   >
@@ -187,7 +187,7 @@ const MentorsSection = () => {
                 Faça parte da nossa rede de mentores e contribua para o ecossistema de startups em Minas Gerais.
               </p>
             </div>
-            <Button className="bg-white text-[#E4002B] hover:bg-red-50 whitespace-nowrap shadow-sm">
+            <Button className="bg-white text-red-600 hover:bg-red-50 whitespace-nowrap shadow-sm">
               Quero ser mentor
             </Button>
           </div>

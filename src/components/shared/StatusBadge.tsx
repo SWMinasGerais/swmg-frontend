@@ -14,14 +14,14 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({
   size = 'sm'
 }) => {
   const statusConfig = {
-    operational: { color: "bg-emerald-50 text-emerald-700", label: "Operacional" },
-    acquired: { color: "bg-blue-50 text-blue-700", label: "Adquirida" },
-    fundraising: { color: "bg-amber-50 text-amber-700", label: "Captando" },
-    accelerated: { color: "bg-amber-50 text-amber-700", label: "Acelerada" },
-    success: { color: "bg-emerald-50 text-emerald-700", label: "Sucesso" },
-    warning: { color: "bg-amber-50 text-amber-700", label: "Atenção" },
-    error: { color: "bg-red-50 text-red-700", label: "Erro" },
-    info: { color: "bg-blue-50 text-blue-700", label: "Informação" }
+    operational: { color: "bg-green-100 text-green-700", label: "Operacional" },
+    acquired: { color: "bg-purple-100 text-purple-700", label: "Adquirida" },
+    fundraising: { color: "bg-blue-100 text-blue-700", label: "Captando" },
+    accelerated: { color: "bg-amber-100 text-amber-700", label: "Acelerada" },
+    success: { color: "bg-green-100 text-green-700", label: "Sucesso" },
+    warning: { color: "bg-amber-100 text-amber-700", label: "Atenção" },
+    error: { color: "bg-red-100 text-red-700", label: "Erro" },
+    info: { color: "bg-blue-100 text-blue-700", label: "Informação" }
   };
   
   const sizeClass = {

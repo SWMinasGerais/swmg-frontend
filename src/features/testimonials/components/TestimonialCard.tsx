@@ -60,26 +60,26 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         </div>
       )}
       
-      <p className={`text-neutral-600 leading-relaxed mb-6 ${config.contentSize} ${config.contentLines}`}>
+      <p className={`text-slate-700 mb-6 ${config.contentSize} ${config.contentLines}`}>
         "{testimonial.content}"
       </p>
-
+      
       <div className="flex items-center">
         <Avatar className={`${config.avatarSize} mr-3`}>
-          <AvatarImage
-            src={testimonial.imageUrl}
-            alt={testimonial.name}
+          <AvatarImage 
+            src={testimonial.imageUrl} 
+            alt={testimonial.name} 
           />
-          <AvatarFallback className="bg-neutral-100 text-neutral-400 text-xs font-semibold">
-            {testimonial.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+          <AvatarFallback className="bg-red-600/10 text-red-700 text-xs font-semibold">
+            {testimonial.name.split(' ').map(n => n[0]).join('')}
           </AvatarFallback>
         </Avatar>
-
+        
         <div>
-          <h4 className={`font-semibold text-[#111] ${config.nameSize}`}>
+          <h4 className={`font-medium text-slate-900 ${config.nameSize}`}>
             {testimonial.name}
           </h4>
-          <p className={`text-neutral-400 ${config.roleSize}`}>
+          <p className={`text-slate-500 ${config.roleSize}`}>
             {testimonial.role}, {testimonial.company}
           </p>
         </div>

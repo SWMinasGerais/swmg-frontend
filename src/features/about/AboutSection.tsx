@@ -104,14 +104,14 @@ const AboutSection = () => {
     return (
       <div 
         key={index} 
-        className={`mb-3 max-w-3xl mx-auto transform transition-all duration-500 ${
+        className={`mb-6 max-w-3xl mx-auto transform transition-all duration-500 ${
           isActive ? "scale-100" : "scale-[0.98]"
         }`}
       >
-        <div
-          className={`p-3 rounded-xl border ${
-            isActive ? "border-red-200 shadow-sm" : "border-neutral-100"
-          } transition-all duration-300 hover:shadow-sm bg-white`}
+        <div 
+          className={` p-5 rounded-xl shadow-md border ${
+            isActive ? "border-red-200 shadow-lg" : "border-slate-100"
+          } transition-all duration-300 hover:shadow-lg`}
         >
           <Accordion 
             type="single" 
@@ -122,29 +122,50 @@ const AboutSection = () => {
           >
             <AccordionItem value={periodValue} className="border-none">
               <AccordionTrigger 
-                className={`group py-2 px-2 rounded-lg text-base font-bold text-[#111] transition-all duration-300 ${
-                  isActive ? "bg-red-50/50" : "hover:bg-neutral-50"
+                className={`group py-4 px-4 rounded-xl text-xl font-bold text-slate-900 transition-all duration-300 ${
+                  isActive ? "bg-gradient-to-r from-red-50 to-white shadow-sm" : "hover:bg-slate-50/80"
                 }`}
               >
                 <div className="flex items-center w-full">
                   <div className="relative flex-shrink-0 transition-all duration-300">
-                    <div className={`w-10 h-10 rounded-lg bg-[#E4002B] flex items-center justify-center text-white text-xs font-bold transition-all duration-300`}>
-                      {periodData.period.split("-")[0].slice(-2)}
+                    <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white overflow-hidden 
+                      ${isActive ? "shadow-lg" : "shadow-md group-hover:shadow-lg"} 
+                      transform transition-all duration-300 
+                      ${isActive ? "scale-105 translate-y-0" : "group-hover:scale-[1.02] group-hover:-translate-y-1"}`}>
+                      <span className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <div className="flex flex-col items-center">
+                        <span className="font-bold text-lg relative z-10 mb-0.5">
+                          {periodData.period.split("-")[0]}
+                        </span>
+                        <div className="h-px w-12 bg-white/30"></div>
+                        <span className="font-bold text-lg relative z-10 mt-0.5">
+                          {periodData.period.split("-")[1] || periodData.period.split("-")[0]}
+                        </span>
+                      </div>
                     </div>
+                    {isActive && (
+                      <div className="absolute -right-2 -top-2 w-7 h-7 bg-white rounded-full shadow flex items-center justify-center">
+                        <div className="w-3.5 h-3.5 rounded-full bg-red-500"></div>
+                      </div>
+                    )}
                   </div>
-                  <div className="flex flex-col ml-3 text-left flex-grow min-w-0">
-                    <div className="flex items-center gap-2">
-                      <h3 className={`font-semibold text-sm transition-all duration-300 truncate ${isActive ? "text-[#E4002B]" : "text-[#111] group-hover:text-[#E4002B]"}`}>
+                  <div className="flex flex-col ml-5 text-left flex-grow">
+                    <div className="flex items-center justify-between w-full">
+                      <h3 className={`font-bold text-lg transition-all duration-300 ${isActive ? "text-red-700" : "text-slate-900 group-hover:text-red-600"}`}>
                         {periodData.title}
                       </h3>
-                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-neutral-100 text-neutral-500 whitespace-nowrap hidden md:inline-block">
-                        {periodData.period}
+                      <span className="text-xs font-medium px-3 py-1 rounded-full bg-red-100/60 text-red-800 ml-auto mr-4 hidden md:flex items-center gap-1">
+                        <Calendar className="h-3 w-3" />
+                        <span>{periodData.years?.length || 0} anos</span>
                       </span>
                     </div>
-                    <div className="flex items-center mt-0.5">
-                      <p className="text-xs text-neutral-400 flex items-center gap-2">
-                        <span className="hidden md:inline-block">
-                          {periodData.years?.length || 0} anos de história
+                    <div className="flex items-center mt-1">
+                      <p className="text-sm text-slate-600 flex items-center gap-2">
+                        <span className="inline-block px-2.5 py-1 bg-slate-100 rounded-md font-medium">
+                          {periodData.period}
+                        </span>
+                        <span className="text-xs text-slate-500 hidden md:inline-block">
+                          Inclui eventos de {periodData.period.split("-")[0]} a {periodData.period.split("-")[1] || periodData.period.split("-")[0]}
                         </span>
                       </p>
                     </div>

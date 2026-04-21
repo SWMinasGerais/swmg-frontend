@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
       
       {/* CTA */}
       <div className="mt-10 text-center">
-        <Button className="bg-white hover:bg-slate-50 text-[#E4002B]">
+        <Button className="bg-white hover:bg-slate-50 text-red-600">
           Compartilhar sua experiência
         </Button>
       </div>

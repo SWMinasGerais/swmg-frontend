@@ -45,27 +45,27 @@ const MentorCard = ({
             )}
           </div>
           
-          <Avatar className="h-12 w-12 mb-3">
-            <AvatarImage
-              src={mentor.photo}
-              alt={mentor.name}
+          <Avatar className="h-24 w-24 mb-3 border-2 border-red-500/20">
+            <AvatarImage 
+              src={mentor.photo} 
+              alt={mentor.name} 
               onError={onImageError}
             />
-            <AvatarFallback className="bg-neutral-100 text-neutral-400 text-sm font-semibold">
-              {mentor.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+            <AvatarFallback className="bg-red-50 text-red-700 text-xl">
+              {mentor.name.split(' ').map(n => n[0]).join('')}
             </AvatarFallback>
           </Avatar>
           
-          <h3 className="font-bold text-xl text-[#111] text-center line-clamp-1">{mentor.name}</h3>
-
-          <div className="mt-1 flex items-center text-neutral-500 text-sm line-clamp-1 max-w-full">
-            <Briefcase className="h-4 w-4 mr-1 shrink-0 text-neutral-400" />
+          <h3 className="font-bold text-xl text-slate-900 text-center line-clamp-1">{mentor.name}</h3>
+          
+          <div className="mt-1 flex items-center text-slate-600 text-sm line-clamp-1 max-w-full">
+            <Briefcase className="h-4 w-4 mr-1 shrink-0 text-slate-400" />
             <span className="truncate">{mentor.role}{mentor.company ? ` · ${mentor.company}` : ""}</span>
           </div>
-
+          
           {mentor.location && (
-            <div className="mt-1 flex items-center text-neutral-500 text-sm line-clamp-1 max-w-full">
-              <MapPin className="h-4 w-4 mr-1 shrink-0 text-neutral-400" />
+            <div className="mt-1 flex items-center text-slate-500 text-sm line-clamp-1 max-w-full">
+              <MapPin className="h-4 w-4 mr-1 shrink-0 text-slate-400" />
               <span className="truncate">{mentor.location}</span>
             </div>
           )}
@@ -88,7 +88,7 @@ const MentorCard = ({
         
         {/* Bio snippet */}
         {mentor.bio && (
-          <div className="px-4 pb-3 text-center text-sm text-neutral-500 line-clamp-2">
+          <div className="px-4 pb-3 text-center text-sm text-slate-600 line-clamp-2">
             {mentor.bio}
           </div>
         )}

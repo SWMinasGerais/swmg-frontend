@@ -117,7 +117,7 @@ const teamMembers: TeamMemberData[] = [
 
 const TeamSection = () => {
   return (
-    <SectionTemplate id="equipe" spacing="lg" className="bg-[#FAF9F6]">
+    <SectionTemplate id="equipe" spacing="lg">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

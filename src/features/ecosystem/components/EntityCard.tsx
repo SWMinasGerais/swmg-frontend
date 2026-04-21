@@ -28,9 +28,9 @@ const EntityCard: React.FC<EntityCardProps> = ({
   className
 }) => {
   return (
-    <div
+    <div 
       className={cn(
-        "bg-white rounded-xl border border-neutral-100 p-4 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 flex items-center",
+        "p-3 border border-gray-100 rounded-lg hover:-translate-y-1 hover:shadow-lg transition-all duration-300 flex items-center",
         className
       )}
       onMouseEnter={onMouseEnter}
@@ -43,12 +43,12 @@ const EntityCard: React.FC<EntityCardProps> = ({
           className="w-8 h-8 object-contain"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
-            target.style.display = "none"; target.parentElement.classList.add("bg-neutral-100");
+            target.src = "https://placehold.co/80x80/eef/046?text=Logo";
           }}
         />
       </div>
       <div className="flex-1 min-w-0">
-        <h4 className="font-semibold text-[#111] text-sm truncate">{name}</h4>
+        <h4 className="font-medium text-slate-900 truncate">{name}</h4>
         {city && (
           <div className="flex items-center">
             <MapPin className="h-3 w-3 text-gray-400 mr-1" />
@@ -59,7 +59,7 @@ const EntityCard: React.FC<EntityCardProps> = ({
       <div className="flex-shrink-0">
         <span 
           className={cn(
-            "inline-flex items-center px-2 py-0.5 rounded-full text-[10px] uppercase tracking-wider",
+            "inline-flex items-center px-2 py-0.5 rounded-full text-xs",
             typeClass
           )}
         >

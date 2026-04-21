@@ -390,7 +390,7 @@ const EcosistemaPage = () => {
                                 className="w-12 h-12 object-contain"
                                 onError={(e) => {
                                   const target = e.target as HTMLImageElement;
-                                  target.style.display = "none"; target.parentElement.classList.add("bg-neutral-100");
+                                  target.src = "https://placehold.co/200x200/eef/046?text=Logo";
                                 }}
                               />
                             </div>

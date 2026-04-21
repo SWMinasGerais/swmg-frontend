@@ -279,7 +279,7 @@ const EcosystemSection = () => {
                         className="w-8 h-8 object-contain"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
-                          target.style.display = "none"; target.parentElement.classList.add("bg-neutral-100");
+                          target.src = "https://placehold.co/80x80/eef/046?text=Logo";
                         }}
                       />
                     </div>

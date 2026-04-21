@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, ArrowRight, User, FileText } from "lucide-react";
+import { Calendar, ArrowRight, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { BlogPost, CategoryConfig } from "@/modules/blog/types";
 
@@ -16,43 +16,41 @@ export const BlogPostCard: React.FC<BlogPostCardProps> = ({
 }) => {
   if (featured) {
     return (
-      <div className="bg-white rounded-2xl border border-neutral-100 overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+      <div className="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-slate-100/50 group">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="h-64 lg:h-auto overflow-hidden relative bg-gradient-to-br from-neutral-100 to-neutral-50">
-            <img
-              src={post.image}
-              alt={post.title}
+          <div className="h-64 lg:h-auto overflow-hidden">
+            <img 
+              src={post.image} 
+              alt={post.title} 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               onError={(e) => {
-                (e.target as HTMLImageElement).style.display = 'none';
+                const target = e.target as HTMLImageElement;
+                target.src = "https://placehold.co/800x600/eef/046?text=Blog";
               }}
             />
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <FileText className="w-10 h-10 text-neutral-300" />
-            </div>
           </div>
           <div className="p-6 lg:p-8 flex flex-col justify-center">
             <div className="flex items-center mb-3">
-              <span className="text-[10px] font-semibold uppercase tracking-wider text-[#E4002B] bg-[#E4002B]/5 px-2.5 py-1 rounded-full">
+              <span className={`px-3 py-1 rounded-full text-xs font-medium ${categoryConfig[post.category].color}`}>
                 {categoryConfig[post.category].label}
               </span>
-              <span className="text-neutral-400 text-xs ml-3">{post.readTime} de leitura</span>
+              <span className="text-slate-400 text-xs ml-3">{post.readTime} de leitura</span>
             </div>
-
-            <h3 className="text-2xl font-bold text-[#111] leading-snug mb-4">
+            
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">
               {post.title}
             </h3>
-
-            <p className="text-sm text-neutral-500 mb-6">
+            
+            <p className="text-slate-600 mb-6">
               {post.excerpt}
             </p>
-
+            
             <div className="flex items-center justify-between mt-auto">
               <div className="flex items-center">
-                <User className="h-4 w-4 text-[#E4002B] mr-2" />
-                <span className="text-xs text-neutral-400">{post.author}</span>
+                <User className="h-4 w-4 text-red-600 mr-2" />
+                <span className="text-sm font-medium">{post.author}</span>
               </div>
-              <div className="flex items-center text-xs text-neutral-400">
+              <div className="flex items-center text-sm text-slate-500">
                 <Calendar className="h-4 w-4 mr-2" />
                 {post.date}
               </div>
@@ -73,45 +71,43 @@ export const BlogPostCard: React.FC<BlogPostCardProps> = ({
   }
 
   return (
-    <div
-      className="bg-white rounded-2xl border border-neutral-100 overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group h-full flex flex-col"
+    <div 
+      className="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border border-slate-100/50 group h-full flex flex-col"
     >
-      <div className="h-48 overflow-hidden relative bg-gradient-to-br from-neutral-100 to-neutral-50 flex items-center justify-center">
-        <img
-          src={post.image}
-          alt={post.title}
+      <div className="h-48 overflow-hidden">
+        <img 
+          src={post.image} 
+          alt={post.title} 
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           onError={(e) => {
-            (e.target as HTMLImageElement).style.display = 'none';
+            const target = e.target as HTMLImageElement;
+            target.src = "https://placehold.co/800x600/eef/046?text=Blog";
           }}
         />
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <FileText className="w-8 h-8 text-neutral-300" />
-        </div>
       </div>
-
+      
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-[10px] font-semibold uppercase tracking-wider text-[#E4002B] bg-[#E4002B]/5 px-2.5 py-1 rounded-full">
+          <span className={`px-3 py-1 rounded-full text-xs font-medium ${categoryConfig[post.category].color}`}>
             {categoryConfig[post.category].label}
           </span>
-          <span className="text-neutral-400 text-xs">{post.readTime} de leitura</span>
+          <span className="text-slate-400 text-xs">{post.readTime} de leitura</span>
         </div>
-
-        <h3 className="text-xl font-bold text-[#111] leading-snug mb-3">
+        
+        <h3 className="text-xl font-bold text-slate-900 mb-3">
           {post.title}
         </h3>
-
-        <p className="text-sm text-neutral-500 mb-6 line-clamp-3">
+        
+        <p className="text-slate-600 mb-6 line-clamp-3">
           {post.excerpt}
         </p>
-
+        
         <div className="flex items-center justify-between mt-auto">
           <div className="flex items-center">
-            <User className="h-4 w-4 text-[#E4002B] mr-2" />
-            <span className="text-xs text-neutral-400">{post.author}</span>
+            <User className="h-4 w-4 text-red-600 mr-2" />
+            <span className="text-sm">{post.author}</span>
           </div>
-          <div className="flex items-center text-xs text-neutral-400">
+          <div className="flex items-center text-sm text-slate-500">
             <Calendar className="h-4 w-4 mr-2" />
             {post.date}
           </div>
