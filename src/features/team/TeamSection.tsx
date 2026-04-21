@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import SectionTemplate from '@/components/layout/SectionTemplate';
 import TeamGrid from '@/features/team/components/TeamGrid';
 import { TeamMemberData } from '@/modules/team/types';
@@ -117,12 +118,19 @@ const teamMembers: TeamMemberData[] = [
 const TeamSection = () => {
   return (
     <SectionTemplate id="equipe" spacing="lg">
-      <TeamGrid
-        members={teamMembers}
-        title="Quem faz acontecer"
-        description="Conheça os organizadores, gerentes de comunidade e voluntários que transformam o Circuito Mineiro de Startup Weekend em realidade."
-        eyebrow="Nossa Equipe"
-      />
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5 }}
+      >
+        <TeamGrid
+          members={teamMembers}
+          title="Quem faz acontecer"
+          description="Conheça os organizadores, gerentes de comunidade e voluntários que transformam o Circuito Mineiro de Startup Weekend em realidade."
+          eyebrow="Nossa Equipe"
+        />
+      </motion.div>
     </SectionTemplate>
   );
 };

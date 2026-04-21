@@ -16,7 +16,7 @@ export const BlogPostCard: React.FC<BlogPostCardProps> = ({
 }) => {
   if (featured) {
     return (
-      <div className="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100/50 group">
+      <div className="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-slate-100/50 group">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="h-64 lg:h-auto overflow-hidden">
             <img 
@@ -72,7 +72,7 @@ export const BlogPostCard: React.FC<BlogPostCardProps> = ({
 
   return (
     <div 
-      className="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100/50 group h-full flex flex-col"
+      className="bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border border-slate-100/50 group h-full flex flex-col"
     >
       <div className="h-48 overflow-hidden">
         <img 

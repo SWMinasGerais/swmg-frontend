@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { 
   HelpCircle, 
@@ -34,12 +35,19 @@ const FaqSection = () => {
   return (
     <section id="faq" className="py-14 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <SectionTitle 
-          eyebrow="Perguntas Frequentes"
-          title="Tire suas dúvidas"
-          description="Encontre respostas para as perguntas mais comuns sobre o Startup Weekend, inscrições, formato do evento e mais."
-          align="center"
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.5 }}
+        >
+          <SectionTitle
+            eyebrow="Perguntas Frequentes"
+            title="Tire suas dúvidas"
+            description="Encontre respostas para as perguntas mais comuns sobre o Startup Weekend, inscrições, formato do evento e mais."
+            align="center"
+          />
+        </motion.div>
 
         <div className="max-w-4xl mx-auto">
           {/* Search bar */}
@@ -74,8 +82,14 @@ const FaqSection = () => {
           </div>
 
           {/* FAQ accordion */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
           {filteredFaqs.length > 0 ? (
-            <FaqAccordion 
+            <FaqAccordion
               items={filteredFaqs}
               categoryConfig={categoryConfig}
             />
@@ -100,6 +114,7 @@ const FaqSection = () => {
               </Button>
             </div>
           )}
+          </motion.div>
 
           {/* Contact CTA */}
           <div className="mt-10 p-8 bg-white/80 backdrop-blur-sm rounded-xl shadow-md border border-slate-100/50">

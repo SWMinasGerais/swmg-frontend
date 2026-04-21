@@ -51,7 +51,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 
   return (
     <BackgroundWrapper 
-      className={`hover:shadow-md transition-all duration-300 ${className}`}
+      className={`hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ${className}`}
       padding={size === 'lg' ? 'lg' : 'md'}
     >
       {showQuoteIcon && (

@@ -30,7 +30,7 @@ const StartupCard: React.FC<StartupCardProps> = ({
 
   return (
     <BackgroundWrapper
-      className="group transition-all duration-300 hover:shadow-lg overflow-hidden"
+      className="group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg overflow-hidden"
     >
       <CardHeader
         title={startup.name}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { UsersRound, CalendarClock, Clock, Calendar, ArrowRight, Sparkles, Check, Briefcase } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -77,7 +78,13 @@ const MentorshipSection = () => {
   return (
     <section id="mentoria" className="py-14 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.5 }}
+          className="text-center max-w-3xl mx-auto mb-10"
+        >
           <div className="inline-flex items-center justify-center mb-3">
             <div className="w-8 h-1 bg-red-600 mr-2"></div>
             <h5 className="font-medium text-slate-900">Programa de Mentoria</h5>
@@ -88,10 +95,16 @@ const MentorshipSection = () => {
           <p className="text-slate-600">
             Nosso programa de mentoria conecta empreendedores a profissionais experientes que podem ajudar a impulsionar seu negócio através de sessões personalizadas.
           </p>
-        </div>
+        </motion.div>
 
         {/* Program benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10"
+        >
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-slate-100/50 hover:shadow-md transition-all duration-300">
             <div className="w-12 h-12 bg-red-600/10 rounded-lg flex items-center justify-center mb-4">
               <Clock className="text-red-600 h-6 w-6" />
@@ -121,7 +134,7 @@ const MentorshipSection = () => {
               Acompanhamento contínuo com encontros semanais para ajudar no desenvolvimento do seu negócio.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Featured mentors section */}
         <div className="mb-8">

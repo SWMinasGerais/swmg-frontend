@@ -30,7 +30,7 @@ const EntityCard: React.FC<EntityCardProps> = ({
   return (
     <div 
       className={cn(
-        "p-3 border border-gray-100 rounded-lg hover:shadow-sm transition-shadow flex items-center",
+        "p-3 border border-gray-100 rounded-lg hover:-translate-y-1 hover:shadow-lg transition-all duration-300 flex items-center",
         className
       )}
       onMouseEnter={onMouseEnter}

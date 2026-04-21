@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import SectionTitle from "@/components/shared/SectionTitle";
 import SectionTemplate from "@/components/layout/SectionTemplate";
@@ -101,13 +102,20 @@ const MentorsSection = () => {
 
   return (
     <SectionTemplate id="mentoria" spacing="lg">
-      <SectionTitle 
-        eyebrow="Nossa Rede de Mentores"
-        title="Conexão com especialistas"
-        titleHighlight="especialistas"
-        description="Conheça os mentores que compõem o Circuito Mineiro de Startup Weekend e estão prontos para compartilhar suas experiências e conhecimentos para ajudar sua startup a alcançar seu potencial."
-        align="center"
-      />
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5 }}
+      >
+        <SectionTitle
+          eyebrow="Nossa Rede de Mentores"
+          title="Conexão com especialistas"
+          titleHighlight="especialistas"
+          description="Conheça os mentores que compõem o Circuito Mineiro de Startup Weekend e estão prontos para compartilhar suas experiências e conhecimentos para ajudar sua startup a alcançar seu potencial."
+          align="center"
+        />
+      </motion.div>
 
       {/* Filters */}
       <MentorFilters
@@ -126,12 +134,19 @@ const MentorsSection = () => {
       />
 
       {/* Mentors Grid */}
-      <MentorsGrid
-        mentors={paginatedMentors}
-        isLoading={isLoading}
-        isError={isError}
-        onResetFilters={handleResetFilters}
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <MentorsGrid
+          mentors={paginatedMentors}
+          isLoading={isLoading}
+          isError={isError}
+          onResetFilters={handleResetFilters}
+        />
+      </motion.div>
 
       {/* Pagination - Simple version */}
       {filteredMentors.length > pageSize && !isLoading && !isError && (

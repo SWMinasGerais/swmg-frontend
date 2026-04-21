@@ -42,7 +42,7 @@ const EventCard: React.FC<EventCardProps> = ({
   return (
     <div 
       className={cn(
-        "bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg mb-4 transform transition-transform hover:scale-[1.02]",
+        "bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg mb-4 transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl",
         className
       )}
     >

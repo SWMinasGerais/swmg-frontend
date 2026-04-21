@@ -10,7 +10,7 @@ interface TeamMemberCardProps {
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
   return (
-    <BackgroundWrapper className="hover:shadow-md transition-all duration-300 h-full flex flex-col">
+    <BackgroundWrapper className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
       <div className="flex-grow">
         <div className="relative mb-5">
           <div className="w-24 h-24 rounded-full overflow-hidden mx-auto border-4 border-white shadow-md">

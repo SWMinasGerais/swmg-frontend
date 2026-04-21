@@ -101,7 +101,7 @@ const PartnerCard: React.FC<PartnerCardProps> = ({
   // Classe para o card principal
   const cardClass = cn(
     "group relative overflow-hidden rounded-lg bg-white border transition-all h-full flex flex-col",
-    "shadow-sm hover:shadow-md hover:border-indigo-200",
+    "shadow-sm hover:-translate-y-1 hover:shadow-lg hover:border-indigo-200 transition-all duration-300",
     highlight ? "ring-2 ring-indigo-400" : "",
     isStateGov ? "border-l-4 border-l-green-500 border-gray-200" : "border-gray-200"
   );

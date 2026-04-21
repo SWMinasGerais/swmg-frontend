@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import SectionTitle from "@/components/shared/SectionTitle";
 import SectionTemplate from "@/components/layout/SectionTemplate";
 import EventFilters from "@/features/events/components/EventFilters";
@@ -225,12 +226,19 @@ const EventsSection = () => {
 
   return (
     <SectionTemplate id="eventos" spacing="lg">
-      <SectionTitle 
-        eyebrow="Próximos Eventos"
-        title="Calendário Startup Weekend MG"
-        description="Encontre o próximo Startup Weekend em Minas Gerais e transforme sua ideia em realidade em apenas um fim de semana."
-        align="center"
-      />
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5 }}
+      >
+        <SectionTitle
+          eyebrow="Próximos Eventos"
+          title="Calendário Startup Weekend MG"
+          description="Encontre o próximo Startup Weekend em Minas Gerais e transforme sua ideia em realidade em apenas um fim de semana."
+          align="center"
+        />
+      </motion.div>
 
       {/* Filters */}
       <EventFilters 
@@ -248,10 +256,17 @@ const EventsSection = () => {
       />
 
       {/* Events Grid */}
-      <EventsGrid 
-        events={paginatedEvents}
-        onResetFilters={resetFilters}
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <EventsGrid
+          events={paginatedEvents}
+          onResetFilters={resetFilters}
+        />
+      </motion.div>
 
         {/* Pagination */}
       <EventsPagination 

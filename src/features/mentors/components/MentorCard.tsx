@@ -27,7 +27,7 @@ const MentorCard = ({
   }
 }: MentorCardProps) => {
   return (
-    <div className="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-100 hover:shadow-md transition-all group h-full">
+    <div className="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-100 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group h-full">
       <div className="flex flex-col h-full">
         {/* Cabeçalho com foto e status */}
         <div className="relative pt-8 pb-4 px-4 flex flex-col items-center">

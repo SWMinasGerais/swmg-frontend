@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { 
@@ -154,12 +155,19 @@ const EcosystemSection = () => {
   return (
     <section id="ecossistema" className="py-12">
       <div className="container mx-auto px-4">
-        <SectionTitle 
-          eyebrow="Ecossistema"
-          title="Mapa de Inovação Mineiro"
-          description="Conheça os principais atores do ecossistema empreendedor de Minas Gerais, conectados através do Circuito Mineiro de Startup Weekend."
-          align="center"
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.5 }}
+        >
+          <SectionTitle
+            eyebrow="Ecossistema"
+            title="Mapa de Inovação Mineiro"
+            description="Conheça os principais atores do ecossistema empreendedor de Minas Gerais, conectados através do Circuito Mineiro de Startup Weekend."
+            align="center"
+          />
+        </motion.div>
 
         <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
           {/* Search box */}
@@ -220,7 +228,13 @@ const EcosystemSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+        >
           {/* Interactive Map (left column on desktop) */}
           <div className="lg:col-span-2 bg-white/80 backdrop-blur-sm rounded-xl shadow-md p-2 h-[500px] relative">
             {/* This would be replaced with an actual map integration like Google Maps or Mapbox */}
@@ -283,17 +297,17 @@ const EcosystemSection = () => {
           {/* Entities List (right column on desktop) */}
           <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-md p-6 h-[500px] overflow-y-auto">
             <h3 className="font-bold text-lg text-swmg-dark mb-4">
-              {selectedType 
-                ? entityTypeConfig[selectedType].label 
+              {selectedType
+                ? entityTypeConfig[selectedType].label
                 : "Todos os Parceiros"}
             </h3>
-            
+
             <EntityList
               entities={ecosystems}
               typeConfig={Object.fromEntries(
                 Object.entries(entityTypeConfig).map(([type, config]) => [
-                  type, 
-                  { 
+                  type,
+                  {
                     icon: config.icon,
                     color: config.color
                   }
@@ -303,8 +317,8 @@ const EcosystemSection = () => {
               emptyMessage={
                 <div className="text-center py-8">
                   <p className="text-gray-500">Nenhuma entidade encontrada com os filtros selecionados.</p>
-                  <Button 
-                    variant="link" 
+                  <Button
+                    variant="link"
                     onClick={resetFilters}
                     className="mt-2 text-swmg-primary"
                   >
@@ -314,7 +328,7 @@ const EcosystemSection = () => {
               }
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* CTA Section */}
         <div className="mt-8 text-center">

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -37,19 +38,33 @@ const CasesSection = () => {
 
   return (
     <SectionTemplate id="cases" spacing="md">
-      <StartupGrid
-        startups={startupData}
-        title="Startups Nascidas no Circuito"
-        description="Conheça as startups que nasceram durante nossos eventos e hoje estão transformando o mercado mineiro e brasileiro."
-        eyebrow="Casos de Sucesso"
-      />
-      
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5 }}
+      >
+        <StartupGrid
+          startups={startupData}
+          title="Startups Nascidas no Circuito"
+          description="Conheça as startups que nasceram durante nossos eventos e hoje estão transformando o mercado mineiro e brasileiro."
+          eyebrow="Casos de Sucesso"
+        />
+      </motion.div>
+
       {/* Stats section below startups grid */}
-      <StatsGrid 
-        stats={startupStatsData} 
-        className="mt-10 mb-4"
-      />
-      
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <StatsGrid
+          stats={startupStatsData}
+          className="mt-10 mb-4"
+        />
+      </motion.div>
+
       <div className="text-center mt-8">
         <Button asChild variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white">
           <Link to="/cases">

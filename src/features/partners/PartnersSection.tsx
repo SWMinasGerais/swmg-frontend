@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import SectionTemplate from '@/components/layout/SectionTemplate';
 import SectionTitle from '@/components/shared/SectionTitle';
 import { Partner, PartnerCategory } from '@/modules/partners/types';
@@ -210,12 +211,19 @@ const PartnersSection: React.FC = () => {
   return (
     <SectionTemplate id="parceiros" spacing="lg">
       <div className="max-w-7xl mx-auto px-4">
-        <SectionTitle
-          eyebrow="Parceiros"
-          title="Quem Apoia o SWMG"
-          description="Conheça as organizações que tornam possível o Circuito Mineiro de Startup Weekend."
-          align="center"
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.5 }}
+        >
+          <SectionTitle
+            eyebrow="Parceiros"
+            title="Quem Apoia o SWMG"
+            description="Conheça as organizações que tornam possível o Circuito Mineiro de Startup Weekend."
+            align="center"
+          />
+        </motion.div>
 
         {/* Tabs para alternar entre visualização normal e ranking */}
         <div className="flex justify-center mb-6">
@@ -249,7 +257,13 @@ const PartnersSection: React.FC = () => {
             />
             
             {/* Partners by Tier */}
-            <div className="mb-10">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mb-10"
+            >
               {Object.entries(partnersByTier).map(([tier, partners]) => (
                     partners.length > 0 && (
                   <TierSection
@@ -272,7 +286,7 @@ const PartnersSection: React.FC = () => {
                   </p>
                 </div>
               )}
-            </div>
+            </motion.div>
           </>
         ) : (
           // Visualização de Ranking
