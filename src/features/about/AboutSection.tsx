@@ -346,28 +346,28 @@ const AboutSection = () => {
   );
 
   return (
-    <section id="sobre" className="py-12 bg-gradient-to-b from-white to-slate-50/50">
+    <section id="sobre" className="py-16" style={{ backgroundColor: '#FAF9F6' }}>
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Left column - Vision, Mission, Values */}
           <div className="animate-fadeIn lg:w-2/5 lg:sticky lg:top-20 self-start">
-            <h5 className="text-slate-900 font-medium mb-3 flex items-center">
-              <div className="w-8 h-1 bg-red-600 mr-2"></div>
-              Sobre nós
-            </h5>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-[2px] bg-[#E4002B]"></div>
+              <span className="text-[11px] font-semibold text-[#E4002B] uppercase tracking-[0.15em]">Sobre nós</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111] mb-6 tracking-[-0.02em] leading-[1.15]">
               Circuito Mineiro de<br />Startup Weekend
             </h2>
-            <p className="text-slate-700 mb-8 leading-relaxed">
+            <p className="text-neutral-500 mb-8 leading-relaxed">
               O Circuito Mineiro de Startup Weekend é uma iniciativa que une empreendedores, 
               desenvolvedores e designers de todo o estado para transformar ideias em startups reais 
               em apenas 54 horas de imersão criativa e colaborativa.
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-slate-100/50 hover:bg-white/90 transition-all duration-300 hover:shadow-md transform hover:-translate-y-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center">
-                  <div className="bg-red-600/10 p-2 rounded-full mr-3">
+              <div className="bg-white p-5 rounded-2xl border border-neutral-100 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">
+                <h3 className="text-base font-bold text-[#111] mb-2 flex items-center">
+                  <div className="bg-[#E4002B]/10 p-2 rounded-xl mr-3">
                     <CheckCircle2 className="h-5 w-5 text-red-600" />
                   </div>
                   Nossa Missão
@@ -379,9 +379,9 @@ const AboutSection = () => {
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-slate-100/50 hover:bg-white/90 transition-all duration-300 hover:shadow-md transform hover:-translate-y-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center">
-                  <div className="bg-red-600/10 p-2 rounded-full mr-3">
+              <div className="bg-white p-5 rounded-2xl border border-neutral-100 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">
+                <h3 className="text-base font-bold text-[#111] mb-2 flex items-center">
+                  <div className="bg-[#E4002B]/10 p-2 rounded-xl mr-3">
                     <CheckCircle2 className="h-5 w-5 text-red-600" />
                   </div>
                   Nossa Visão
@@ -393,9 +393,9 @@ const AboutSection = () => {
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-slate-100/50 hover:bg-white/90 transition-all duration-300 hover:shadow-md transform hover:-translate-y-1">
-                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center">
-                  <div className="bg-red-600/10 p-2 rounded-full mr-3">
+              <div className="bg-white p-5 rounded-2xl border border-neutral-100 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">
+                <h3 className="text-base font-bold text-[#111] mb-2 flex items-center">
+                  <div className="bg-[#E4002B]/10 p-2 rounded-xl mr-3">
                     <CheckCircle2 className="h-5 w-5 text-red-600" />
                   </div>
                   Nossos Valores

@@ -34,15 +34,15 @@ const EventCard: React.FC<EventCardProps> = ({
   };
 
   const statusClasses = {
-    upcoming: 'bg-amber-100 text-amber-700',
-    active: 'bg-green-100 text-green-700',
-    past: 'bg-slate-100 text-slate-700'
+    upcoming: 'text-[10px] font-medium text-[#E4002B] bg-[#E4002B]/10 px-2.5 py-0.5 rounded-full',
+    active: 'text-[10px] font-medium text-green-700 bg-green-100 px-2.5 py-0.5 rounded-full',
+    past: 'text-[10px] font-medium text-neutral-500 bg-neutral-100 px-2.5 py-0.5 rounded-full'
   };
 
   return (
     <div 
       className={cn(
-        "bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg mb-4 transform transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-xl",
+        "bg-white rounded-2xl border border-neutral-100 overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300 p-6 mb-4",
         className
       )}
     >
@@ -56,32 +56,29 @@ const EventCard: React.FC<EventCardProps> = ({
             )}
           </div>
           <div>
-            <p className="font-bold text-slate-900">Startup Weekend</p>
-            <p className="text-sm text-gray-500">{location}</p>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-neutral-400">Startup Weekend</p>
+            <p className="text-xs text-neutral-400">{location}</p>
           </div>
         </div>
-        <span className={cn(
-          "px-3 py-1 rounded-full text-xs font-medium",
-          statusClasses[status]
-        )}>
+        <span className={cn(statusClasses[status])}>
           {statusLabels[status]}
         </span>
       </div>
       <div className="mb-4">
-        <h3 className="font-bold text-lg mb-1">{title}</h3>
-        {theme && <p className="text-xs text-red-600 font-medium mb-1">{theme}</p>}
-        <p className="text-sm text-gray-600">{date}</p>
+        <h3 className="text-lg font-bold text-[#111] leading-snug mb-1">{title}</h3>
+        {theme && <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-[#E4002B] bg-[#E4002B]/5 px-2.5 py-1 rounded-full mb-1">{theme}</span>}
+        <p className="text-xs text-neutral-400">{date}</p>
       </div>
       {status !== 'past' && (
         <div className="flex justify-between items-center">
           {remainingSlots !== undefined && (
-            <div className="text-sm">
-              <span className="font-bold text-red-600">{remainingSlots}</span> vagas restantes
+            <div className="text-xs font-medium text-neutral-500">
+              <span className="font-bold text-[#E4002B]">{remainingSlots}</span> vagas restantes
             </div>
           )}
-          <Button 
-            size="sm" 
-            className="bg-red-600 text-white hover:bg-red-700"
+          <Button
+            size="sm"
+            className="bg-[#E4002B] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#c70025] transition-colors"
             disabled={status === 'upcoming' || remainingSlots === 0}
           >
             {url ? (

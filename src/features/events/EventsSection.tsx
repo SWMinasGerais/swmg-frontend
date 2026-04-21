@@ -225,7 +225,7 @@ const EventsSection = () => {
   ].filter(Boolean).length;
 
   return (
-    <SectionTemplate id="eventos" spacing="lg">
+    <SectionTemplate id="eventos" spacing="lg" className="[background-color:#FAF9F6]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
