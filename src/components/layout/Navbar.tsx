@@ -135,10 +135,10 @@ const Navbar = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white shadow-md py-2' 
-          : 'bg-white/95 backdrop-blur-sm py-3'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled
+          ? 'bg-white/95 backdrop-blur-xl shadow-sm py-2'
+          : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
@@ -151,7 +151,7 @@ const Navbar = () => {
           <div className="bg-red-600 rounded-full w-10 h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
             <span className="text-white font-bold">SW</span>
           </div>
-          <span className="font-heading font-bold text-lg md:text-xl text-slate-900 overflow-hidden transition-all duration-300 ease-in-out">
+          <span className={`font-bold text-lg md:text-xl overflow-hidden transition-all duration-300 ease-in-out ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
             {isLogoHovered ? 'Circuito Mineiro SW' : 'SWMG'}
           </span>
         </Link>
@@ -241,7 +241,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div 
-        className={`lg:hidden bg-white border-t border-slate-100 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`lg:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
           isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
