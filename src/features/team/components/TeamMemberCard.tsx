@@ -13,16 +13,27 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
     <BackgroundWrapper className="hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
       <div className="flex-grow">
         <div className="relative mb-5">
-          <div className="w-24 h-24 rounded-full overflow-hidden mx-auto border-4 border-white shadow-md">
-            <img 
-              src={member.photo} 
-              alt={member.name}
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = "https://placehold.co/200x200/fee/c00?text=SW";
-              }}
-            />
+          <div className="w-12 h-12 rounded-full overflow-hidden mx-auto bg-neutral-100 flex items-center justify-center">
+            {member.photo ? (
+              <img
+                src={member.photo}
+                alt={member.name}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const fallback = target.parentElement?.querySelector('[data-fallback]') as HTMLElement;
+                  if (fallback) fallback.style.display = 'flex';
+                }}
+              />
+            ) : null}
+            <span
+              data-fallback
+              className="text-sm font-semibold text-neutral-400 absolute"
+              style={{ display: member.photo ? 'none' : 'flex' }}
+            >
+              {member.name.split(' ').map((n: string) => n[0]).join('').slice(0, 2)}
+            </span>
           </div>
           <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
             <span className={`px-3 py-1 rounded-full text-xs font-medium ${roleConfig[member.roleType].color}`}>
@@ -32,11 +43,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
         </div>
         
         <div className="text-center mb-4">
-          <h3 className="font-bold text-xl text-slate-900">{member.name}</h3>
-          <p className="text-slate-500 text-sm">{member.role}</p>
+          <h3 className="font-bold text-xl text-[#111]">{member.name}</h3>
+          <p className="text-neutral-500 text-sm">{member.role}</p>
         </div>
-        
-        <p className="text-slate-600 text-center mb-6">{member.bio}</p>
+
+        <p className="text-neutral-500 text-center mb-6">{member.bio}</p>
       </div>
       
       {/* Social links */}

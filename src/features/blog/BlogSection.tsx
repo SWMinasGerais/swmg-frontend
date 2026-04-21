@@ -27,7 +27,7 @@ const BlogSection = () => {
           <div className="mt-6 md:mt-0">
             <Button
               variant="outline"
-              className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white group"
+              className="border-[#E4002B] text-[#E4002B] hover:bg-[#E4002B] hover:text-white group"
             >
               <Link to="/blog" className="hover:underline">
                 Ver todos os artigos

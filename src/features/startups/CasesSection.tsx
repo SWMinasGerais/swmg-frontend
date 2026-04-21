@@ -37,7 +37,7 @@ const CasesSection = () => {
   }));
 
   return (
-    <SectionTemplate id="cases" spacing="md">
+    <SectionTemplate id="cases" spacing="md" className="bg-[#FAF9F6]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ const CasesSection = () => {
       </motion.div>
 
       <div className="text-center mt-8">
-        <Button asChild variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white">
+        <Button asChild variant="outline" className="border-[#E4002B] text-[#E4002B] hover:bg-[#E4002B] hover:text-white">
           <Link to="/cases">
             Ver todos os casos
             <ArrowRight className="ml-2 h-4 w-4" />

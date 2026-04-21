@@ -26,7 +26,7 @@ const FeatureTestimonial: React.FC<FeatureTestimonialProps> = ({
             className="w-full h-full object-cover"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.src = `https://ui-avatars.com/api/?name=${testimonial.name.replace(' ', '+')}&background=fee&color=c00&size=600`;
+              target.style.display = "none"; target.parentElement.classList.add("bg-neutral-100");
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent md:hidden"></div>

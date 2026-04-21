@@ -33,7 +33,7 @@ const FaqSection = () => {
   }));
 
   return (
-    <section id="faq" className="py-14 relative overflow-hidden">
+    <section id="faq" className="py-14 relative overflow-hidden" style={{ backgroundColor: '#FAF9F6' }}>
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ const FaqSection = () => {
               value={searchQuery}
               onChange={setSearchQuery}
               placeholder="Buscar pergunta ou palavra-chave..." 
-              className="py-6 bg-white/80 backdrop-blur-sm border-slate-100/50 rounded-xl"
+              className="py-6 bg-white/80 backdrop-blur-sm border-neutral-100 rounded-xl"
             />
           </div>
 
@@ -96,15 +96,15 @@ const FaqSection = () => {
           ) : (
             <div className="text-center py-12 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm">
               <HelpCircle className="mx-auto h-12 w-12 text-slate-300 mb-4" />
-              <h3 className="text-xl font-bold text-slate-900 mb-2">
+              <h3 className="text-xl font-bold text-[#111] mb-2">
                 Nenhuma pergunta encontrada
               </h3>
-              <p className="text-slate-600 mb-6">
+              <p className="text-neutral-500 mb-6">
                 Tente ajustar sua busca ou selecionar outra categoria.
               </p>
               <Button
                 variant="outline"
-                className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
+                className="border-[#E4002B] text-[#E4002B] hover:bg-[#E4002B] hover:text-white"
                 onClick={() => {
                   setSearchQuery("");
                   setSelectedCategory("all");
@@ -117,25 +117,25 @@ const FaqSection = () => {
           </motion.div>
 
           {/* Contact CTA */}
-          <div className="mt-10 p-8 bg-white/80 backdrop-blur-sm rounded-xl shadow-md border border-slate-100/50">
+          <div className="mt-10 p-8 bg-white/80 backdrop-blur-sm rounded-xl shadow-md border border-neutral-100">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">
+                <h3 className="text-xl font-bold text-[#111] mb-2">
                   Não encontrou o que procurava?
                 </h3>
-                <p className="text-slate-600">
+                <p className="text-neutral-500">
                   Nossa equipe está pronta para responder qualquer dúvida que você ainda tenha.
                 </p>
               </div>
               <div className="flex gap-3">
                 <Button 
                   variant="outline" 
-                  className="border-slate-300 text-slate-700 hover:border-red-600 hover:text-red-600"
+                  className="border-neutral-100 text-neutral-500 hover:border-[#E4002B] hover:text-[#E4002B]"
                 >
                   <Mail className="mr-2 h-4 w-4" />
                   Enviar e-mail
                 </Button>
-                <Button className="bg-red-600 hover:bg-red-700 text-white">
+                <Button className="bg-[#E4002B] hover:bg-red-700 text-white">
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Acessar suporte
                 </Button>

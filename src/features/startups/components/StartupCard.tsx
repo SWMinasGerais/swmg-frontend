@@ -30,7 +30,7 @@ const StartupCard: React.FC<StartupCardProps> = ({
 
   return (
     <BackgroundWrapper
-      className="group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg overflow-hidden"
+      className="group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg overflow-hidden !bg-white !backdrop-blur-none !border-neutral-100 !rounded-2xl"
     >
       <CardHeader
         title={startup.name}
@@ -43,7 +43,7 @@ const StartupCard: React.FC<StartupCardProps> = ({
             onError={(e) => {
               // Fallback if image fails to load
               const target = e.target as HTMLImageElement;
-              target.src = "https://placehold.co/100x100/fee/c00?text=SW"; 
+              target.style.display = "none"; target.parentElement.classList.add("bg-neutral-100"); 
             }}
           />
         }
@@ -51,7 +51,7 @@ const StartupCard: React.FC<StartupCardProps> = ({
       
       <LocationPin location={`${startup.location}`} className="mb-3" />
       
-      <p className="text-slate-600 mb-4 h-12 line-clamp-2">{startup.description}</p>
+      <p className="text-sm text-neutral-500 mb-4 h-12 line-clamp-2">{startup.description}</p>
       
       <div className="flex flex-wrap gap-1 mb-4">
         {startup.industryTags.map((tag, index) => (
@@ -64,7 +64,7 @@ const StartupCard: React.FC<StartupCardProps> = ({
       </div>
       
       <div className="border-t border-slate-100 pt-3 mt-2 flex justify-between items-center">
-        <div className="text-sm font-medium flex items-center text-red-600">
+        <div className="text-xl font-bold text-[#E4002B] flex items-center">
           <DollarSign className="h-4 w-4 mr-1" />
           {startup.fundingAmount}
         </div>

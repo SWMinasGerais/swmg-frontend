@@ -29,7 +29,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({
           </div>
         )}
         <div className="flex-grow">
-          <h3 className="font-bold text-xl mb-1 text-slate-900">{title}</h3>
+          <h3 className="font-bold text-xl mb-1 text-[#111]">{title}</h3>
           {subtitle && <p className="text-sm text-slate-500">{subtitle}</p>}
         </div>
         {status && (
