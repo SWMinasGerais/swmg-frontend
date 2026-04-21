@@ -1,10 +1,12 @@
 import React from 'react';
 import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import SectionTemplate from '@/components/templates/SectionTemplate';
 import EventCard from '@/components/molecules/EventCard';
+import StatCard from '@/components/molecules/StatCard';
 import SectionTitle from '@/components/atoms/SectionTitle';
+import LiveBadge from '@/components/atoms/LiveBadge';
 import { Event } from '@/modules/events/types';
-import { CountUp, LiveBadge, SWButton, StatCard } from '@/design-system';
 
 // Sample upcoming events data
 const upcomingEvents: Event[] = [
@@ -68,13 +70,13 @@ const HeroSection = () => {
           Nós somos Minas, nós somos Startup Weekend. O Circuito Mineiro reúne empreendedores, designers e desenvolvedores para criar o futuro da inovação em nosso estado.
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
-          <SWButton variant="primary" size="lg">
+          <Button size="lg" className="bg-red-600 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20 text-white px-8 py-6 text-lg font-semibold rounded-xl">
             Inscreva-se agora
-          </SWButton>
-          <SWButton variant="outline" size="lg" className="group">
+          </Button>
+          <Button variant="outline" size="lg" className="border-slate-300 text-slate-700 hover:border-red-300 hover:text-red-600 px-8 py-6 text-lg rounded-xl group">
             Veja cases
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </SWButton>
+          </Button>
         </div>
 
         {/* Stats bar */}
