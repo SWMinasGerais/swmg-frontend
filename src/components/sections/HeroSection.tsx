@@ -48,101 +48,67 @@ const upcomingEvents: Event[] = [
 
 const HeroSection = () => {
   return (
-    <SectionTemplate 
+    <SectionTemplate
       spacing="lg"
-      className="pt-28 pb-16 md:pt-32 md:pb-24"
+      className="pt-28 pb-16 md:pt-32 md:pb-20"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="animate-fade-in">
-          <LiveBadge className="mb-6">O Maior Evento de Empreendedorismo de MG</LiveBadge>
+      {/* Hero content — centered */}
+      <div className="max-w-3xl mx-auto text-center animate-fade-in">
+        <LiveBadge className="mb-6">O Maior Evento de Empreendedorismo de MG</LiveBadge>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
-            Transformando ideias em <span className="text-red-600 relative">startups<span className="absolute bottom-0 left-0 w-full h-1 bg-red-600/30 rounded-full"></span></span> em 54h
-          </h1>
-          <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-xl">
-            Nós somos Minas, nós somos Startup Weekend. O Circuito Mineiro reúne empreendedores, designers e desenvolvedores para criar o futuro da inovação em nosso estado.
-          </p>
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
-            <SWButton variant="primary" size="lg">
-              Inscreva-se agora
-            </SWButton>
-            <SWButton variant="outline" size="lg" className="group">
-              Veja cases
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </SWButton>
-          </div>
-
-          {/* Stats bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-slate-200">
-            <StatCard value={5000} prefix="+" label="Participantes" />
-            <StatCard value={40} suffix="+" label="Startups criadas" />
-            <StatCard value={128} suffix="+" label="Eventos realizados" />
-            <StatCard value={28} prefix="R$ " suffix="M" label="Investimento captado" />
-          </div>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+          Transformando ideias em{' '}
+          <span className="text-red-600 relative inline-block">
+            startups
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-red-600/30 rounded-full"></span>
+          </span>{' '}
+          em 54h
+        </h1>
+        <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto">
+          Nós somos Minas, nós somos Startup Weekend. O Circuito Mineiro reúne empreendedores, designers e desenvolvedores para criar o futuro da inovação em nosso estado.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
+          <SWButton variant="primary" size="lg">
+            Inscreva-se agora
+          </SWButton>
+          <SWButton variant="outline" size="lg" className="group">
+            Veja cases
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </SWButton>
         </div>
-        
-        <div className="relative animate-fade-in hidden lg:flex flex-col">
-          <SectionTitle 
-            title="Próximos Eventos"
-            eyebrow="Participe"
-            align="left"
-            className="mb-6"
-          />
-          
-          <div className="relative h-full">
-            {/* Event cards staggered */}
-            <div className="space-y-4">
-              {upcomingEvents.map((event, index) => (
-                <div 
-                  key={event.id}
-                  className="relative"
-                  style={{ 
-                    marginLeft: `${index * 1.5}rem`, 
-                    zIndex: upcomingEvents.length - index 
-                  }}
-                >
-                  <EventCard
-                    title={event.title}
-                    date={event.date}
-                    location={event.city}
-                    theme={event.theme as string}
-                    status={event.status}
-                    remainingSlots={event.remainingSlots}
-                    image={event.imageUrl}
-                    url={`/events/${event.id}`}
-                    featured={index === 0}
-                    className={index === 0 ? "transform scale-100 shadow-lg" : "transform scale-95 opacity-90"}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+
+        {/* Stats bar */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-slate-200">
+          <StatCard value={5000} prefix="+" label="Participantes" />
+          <StatCard value={40} suffix="+" label="Startups criadas" />
+          <StatCard value={128} suffix="+" label="Eventos realizados" />
+          <StatCard value={28} prefix="R$ " suffix="M" label="Investimento captado" />
         </div>
       </div>
-      
-      {/* Mobile-only event cards */}
-      <div className="lg:hidden mt-12">
-        <SectionTitle 
+
+      {/* Próximos Eventos — 3 colunas abaixo */}
+      <div className="mt-16">
+        <SectionTitle
           title="Próximos Eventos"
           eyebrow="Participe"
           align="center"
-          className="mb-6"
+          className="mb-8"
         />
-        <div className="flex overflow-x-auto pb-4 gap-4 snap-x">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {upcomingEvents.map((event) => (
-            <div key={event.id} className="snap-center min-w-[300px] w-[85vw] max-w-sm">
-              <EventCard
-                title={event.title}
-                date={event.date}
-                location={event.city}
-                theme={event.theme as string}
-                status={event.status}
-                remainingSlots={event.remainingSlots}
-                image={event.imageUrl}
-                url={`/events/${event.id}`}
-                featured
-              />
-            </div>
+            <EventCard
+              key={event.id}
+              title={event.title}
+              date={event.date}
+              location={event.city}
+              theme={event.theme as string}
+              status={event.status}
+              remainingSlots={event.remainingSlots}
+              image={event.imageUrl}
+              url={`/events/${event.id}`}
+              featured
+            />
           ))}
         </div>
       </div>
